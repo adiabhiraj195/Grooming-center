@@ -6,6 +6,7 @@ import { ProductItem, ProductVariant } from "@/data/products";
 import { formatINR } from "@/lib/utils";
 import { useBasket } from "@/context/BasketContext";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { SHOP_DATA } from "@/data/shop";
 import { X, Check, ShoppingBag, MessageCircle } from "lucide-react";
 
 export interface ProductQuickViewModalProps {
@@ -58,7 +59,7 @@ export const ProductQuickViewModal: React.FC<ProductQuickViewModalProps> = ({
   };
 
   const whatsappInquiryUrl = getWhatsAppLink(
-    `Hi Pawfect Tails! I have an enquiry about: ${product.name} (${selectedVariant.label}) priced at ${formatINR(selectedVariant.price)}. Is it currently available for pick-up/delivery in Indiranagar?`
+    `Hi ${SHOP_DATA.name}! I have an enquiry about: ${product.name} (${selectedVariant.label}) priced at ${formatINR(selectedVariant.price)}. Is it currently available for pick-up at your ${SHOP_DATA.area} parlour?`
   );
 
   return (
@@ -215,7 +216,7 @@ export const ProductQuickViewModal: React.FC<ProductQuickViewModalProps> = ({
               ) : (
                 <a
                   href={getWhatsAppLink(
-                    `Hi Pawfect Tails, please notify me when ${product.name} (${selectedVariant.label}) is back in stock!`
+                    `Hi ${SHOP_DATA.name}, please notify me when ${product.name} (${selectedVariant.label}) is back in stock!`
                   )}
                   target="_blank"
                   rel="noopener noreferrer"

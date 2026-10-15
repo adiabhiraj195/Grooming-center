@@ -56,8 +56,8 @@ export const BasketDrawer: React.FC = () => {
   // Build clean single itemised WhatsApp message
   const fulfillmentText =
     fulfillmentMethod === "store-pickup"
-      ? "🏪 Pick-up in store (Indiranagar)"
-      : "🛁 Add to my upcoming grooming appointment";
+      ? `🏪 Pick-up in store (${SHOP_DATA.area}, ${SHOP_DATA.city})`
+      : "🛁 Add to my upcoming grooming or clinic visit";
 
   const itemListText = items
     .map(
@@ -75,7 +75,7 @@ export const BasketDrawer: React.FC = () => {
     `💰 *Estimated Total:* ${formatINR(totalPrice)}`,
     `📦 *Fulfillment Preference:* ${fulfillmentText}`,
     ``,
-    `Please confirm product availability and pickup timing at your ${SHOP_DATA.area} spa. Thank you!`,
+    `Please confirm product availability and pickup timing at your ${SHOP_DATA.area} parlour. Thank you!`,
   ].join("\n");
 
   return (

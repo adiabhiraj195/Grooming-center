@@ -1,45 +1,48 @@
-# Pawfect Tails Pet Spa — Bengaluru
+# Animalia Pet Care Grooming Parlour — Rewari, Haryana
 
-Luxury, fear-free pet grooming & wellness centre website for dogs and cats in Indiranagar, Bengaluru. Built with **Next.js 16 (App Router)**, **React 19**, **TypeScript**, **Tailwind CSS v4**, and **Framer Motion**.
+Highly-rated all-in-one pet care and grooming center, medical clinic, animal hospital, and pet accessories dealership located near Pilot Chowk at Gate No-2, Sector 3 Road, Radha Swami Colony, Bhakti Nagar in Rewari, Haryana. Built with **Next.js 16 (App Router)**, **React 19**, **TypeScript**, **Tailwind CSS v4**, and **Framer Motion**.
+
+📖 **[UI/UX Guide & Visual Documentation (Hinglish)](UI_UX_GUIDE.md)**: UI screenshots, design tokens, and user flow explanations in Hinglish.
 
 ---
 
 ## 🌟 Key Features
 
-1. **Google Reviews Integration (Places API New)**:
+1. **All-in-One Pet Destination**:
+   - **Dedicated Grooming Clinic**: Professional bathing, royal styling, coat maintenance, and hygiene.
+   - **Medical Clinic & Animal Hospital**: Routine health checkups, veterinary treatments, skin allergy care, and wound dressings.
+   - **Authorized Pet Supplies Dealer**: Pet foods, accessories, toys, walk gear, and daily essentials.
+
+2. **Google & Justdial Reviews Integration**:
+   - Exceptional reputation online with a perfect **5.0-star rating** gathered from over 40 customer reviews.
    - Server-side caching with 6-hour Next.js revalidation (`revalidate: 21600`).
    - Complies 100% with Google review guidelines: unmodified text, clear Google branding, no filtering of negative reviews, zero review gating, and no review incentive offers.
-   - Dual-direction marquee with curated pet parent testimonials.
+   - Dual-direction marquee with authentic pet parent testimonials.
    - 3-step interactive review generator ("Loved your visit? Tell Google in 30 seconds") with copy-to-clipboard, toast notification, and celebration confetti.
    - In-salon counter QR stand printable at `/review-qr`.
 
-2. **Prices & Plans Section (`#pricing`)**:
+3. **Amenities & Accessibility Card**:
+   - **Quick Visits & Walk-ins**: Accommodating for quick visits, walk-ins warmly accepted.
+   - **Free Parking**: On-site parking and free street parking outside Gate No-2 on Sector 3 Road.
+   - **Payment Modes**: NFC contactless mobile payments (Apple Pay, Google Pay, PhonePe, Paytm), UPI, Debit/Credit cards, and Cash.
+   - **Gender-Neutral Restroom**: Clean on-site facilities for pet parents.
+   - **Accessibility Transparency**: Transparent notice that facility currently lacks wheelchair-accessible entrances, parking, or seating, with curbside assistance offered.
+
+4. **Prices & Plans Section (`#pricing`)**:
    - Interactive dog size weight selector (< 10kg, 10–25kg, 25–40kg, 40kg+) with dynamic scaling Bruno mascot silhouette.
    - Cat coat selector (Short Coat, Long/Double Coat).
-   - Rolling prices across 3 primary packages (Fresh Bath, Full Groom, Royal Ayurvedic Spa).
-   - Multi-select add-ons with sticky live estimate card and one-tap WhatsApp booking pre-fill.
-   - Membership plans (Pawfect Pass, Glow Club, Family Pack) showing exact ₹ and % savings.
-   - Expandable feature comparison matrix.
+   - Highly affordable, transparent pricing across 3 primary packages + Veterinary Check add-ons.
+   - Membership plans (Animalia Care Pass & Glow Club) showing exact savings.
 
-3. **The Groomer's Shelf — Products Section (`#products`)**:
-   - 12 curated products across 7 categories (Shampoo, Food, Toys, Walk Gear, Health, Cat Corner, Accessories).
-   - Seasonal bundles banner (Summer Splash, Monsoon Tick-Shield, Diwali Calm).
-   - Quick-view modal with variant selector and in-stock badges.
-   - Floating WhatsApp enquiry basket with slide-over drawer, quantity controls, pickup/appointment toggles, and single itemised WhatsApp message.
-   - Injected Schema.org `Product` + `Offer` JSON-LD for rich search results.
+5. **The Groomer's Shelf — Products Section (`#products`)**:
+   - Curated pet supplies across 7 categories (Shampoo, Food & Treats, Toys, Walk Gear, Health, Cat Corner, Accessories).
+   - In-store pickup (`Sector 3 Road, Rewari`) and add-to-appointment fulfillment options.
+   - WhatsApp order and inquiry cart.
 
-4. **Full Page Flow**:
-   - Top announcement bar with Bengaluru fear-free badge and live open/closed pulse indicator.
-   - Sticky navbar with language toggle (English / हिन्दी) and floating review chip.
-   - Trust strip with 5 safety pill cards (Medical-grade hygiene, 100% natural, Fear-free certified, Live CCTV, AC pet-cab).
-   - Interactive Before/After transformation gallery with Caveat handwritten parent quotes.
-   - 4-step gentle fear-free grooming journey.
-   - Master groomers showcase (Sreekumar, Priyanka, Rohit).
-   - FAQ accordion with category filters.
-   - Quick WhatsApp booking form.
-   - Indiranagar studio map & operating hours schedule.
-   - Footer with Bengaluru 24x7 emergency vet numbers (Cessna, CUPA, CARE) and wagging-tail Bruno silhouette.
-   - Mobile sticky bottom bar (Call, WhatsApp, Book, Basket).
+6. **Hours & Contact**:
+   - Open **7 days a week from 8:00 AM to 8:30 PM**.
+   - Direct Contact Numbers: **085700 49726** and **095188 81824**.
+   - Bilingual support: Full English and हिन्दी localization (`lib/i18n.tsx`).
 
 ---
 
@@ -60,16 +63,16 @@ Create `.env.local` in the project root (see `.env.example`):
 GOOGLE_PLACES_API_KEY=your_places_api_key_here
 
 # Google Place ID for fetching reviews (Server-only)
-GOOGLE_PLACE_ID=ChIJN1t_tDeuEmsRUsoyG83frY4
+GOOGLE_PLACE_ID=ChIJAnimaliaPetCareRewari
 
 # Public Google Place ID for the direct "Write a Review" link
-NEXT_PUBLIC_GOOGLE_PLACE_ID=ChIJN1t_tDeuEmsRUsoyG83frY4
+NEXT_PUBLIC_GOOGLE_PLACE_ID=ChIJAnimaliaPetCareRewari
 
-# WhatsApp salon phone number (Country code + 10 digits without '+' or spaces)
-NEXT_PUBLIC_WHATSAPP_NUMBER=919876543210
+# WhatsApp business phone number (Country code + 10 digits without '+' or spaces)
+NEXT_PUBLIC_WHATSAPP_NUMBER=918570049726
 ```
 
-> **Note**: If `GOOGLE_PLACES_API_KEY` or `GOOGLE_PLACE_ID` is left empty, the website automatically falls back to curated pet parent reviews from `data/reviews.ts` with zero visitor downtime.
+> **Note**: If `GOOGLE_PLACES_API_KEY` or `GOOGLE_PLACE_ID` is left empty, the website automatically falls back to curated 5.0★ pet parent reviews from `data/reviews.ts` with zero visitor downtime.
 
 ### 3. Run Development Server
 
@@ -85,7 +88,7 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### 1. How to Find Your Google Place ID
 1. Open the official [Google Maps Place ID Finder](https://developers.google.com/maps/documentation/places/web-service/place-id).
-2. Enter your shop name and address (e.g. `Pawfect Tails Pet Spa, Indiranagar, Bengaluru`).
+2. Enter your shop name and address (e.g. `Animalia Pet Care Grooming Parlour, Bhakti Nagar, Rewari, Haryana`).
 3. Copy the alphanumeric Place ID string (e.g. `ChIJ...`).
 4. Set both `GOOGLE_PLACE_ID` and `NEXT_PUBLIC_GOOGLE_PLACE_ID` in `.env.local`.
 

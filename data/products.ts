@@ -50,7 +50,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     nameHi: "आयुर्वेदिक नीम व लैवेंडर कामिंग शैम्पू",
     brand: "Bark & Botanicals",
     category: "Shampoo & Grooming",
-    description: "Tearless, sulfate-free herbal shampoo enriched with cold-pressed Bangalore neem and English lavender oil.",
+    description: "Tearless, sulfate-free herbal shampoo enriched with cold-pressed organic neem and English lavender oil.",
     descriptionHi: "बिना आंसू वाला, सल्फेट-मुक्त हर्बल शैम्पू जो त्वचा को खुजली से राहत देता है।",
     imageUrl: "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600&auto=format&fit=crop&q=80",
     variants: [
@@ -94,7 +94,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     id: "prod-crunchy-treats",
     name: "Slow-Roasted Chicken Jerky Coins",
     nameHi: "स्लो रोस्टेड चिकन जर्की कॉइन्स",
-    brand: "Pawfect Kitchens",
+    brand: "Animalia Pantry",
     category: "Food & Treats",
     description: "100% human-grade farm chicken breast, zero preservatives, grains, or artificial coloring. High protein training treat.",
     descriptionHi: "100% शुद्ध चिकन ब्रेस्ट, बिना किसी प्रिजर्वेटिव या अनाज के।",
@@ -161,11 +161,11 @@ export const PRODUCTS_DATA: ProductItem[] = [
   // 6. Walk Gear
   {
     id: "prod-padded-harness",
-    name: "Bangalore City Walk No-Pull Padded Harness",
+    name: "City Walk No-Pull Padded Comfort Harness",
     nameHi: "नो-पुल पैडेड डॉग हार्नेस",
-    brand: "UrbanTail Bengaluru",
+    brand: "Animalia Pet Gear",
     category: "Walk Gear",
-    description: "Breathable air-mesh harness with front leash attachment to discourage pulling on Cubbon Park strolls.",
+    description: "Breathable air-mesh harness with front leash attachment to discourage pulling on daily city walks.",
     descriptionHi: "गले पर दबाव डाले बिना आराम से चलने के लिए सुरक्षित पैडेड हार्नेस।",
     imageUrl: "https://images.unsplash.com/photo-1535294435445-d7249524ef2e?w=600&auto=format&fit=crop&q=80",
     variants: [
@@ -187,9 +187,9 @@ export const PRODUCTS_DATA: ProductItem[] = [
     id: "prod-waterproof-leash",
     name: "Monsoon-Proof Biothane Waterproof Leash",
     nameHi: "वॉटरप्रूफ बायोथेन डॉग लीश",
-    brand: "UrbanTail Bengaluru",
+    brand: "Animalia Pet Gear",
     category: "Walk Gear",
-    description: "Mud-resistant, waterproof 5ft leash that wipes clean in seconds after rainy Bangalore walks.",
+    description: "Mud-resistant, waterproof 5ft leash that wipes clean in seconds after rainy or dusty walks.",
     descriptionHi: "कीचड़ और पानी से सुरक्षित लीश जो कभी गंदी या बदबूदार नहीं होती।",
     imageUrl: "https://images.unsplash.com/photo-1608096299210-db7e38487075?w=600&auto=format&fit=crop&q=80",
     variants: [

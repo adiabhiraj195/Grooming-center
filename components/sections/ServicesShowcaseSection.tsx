@@ -22,7 +22,7 @@ export const ServicesShowcaseSection: React.FC = () => {
         </div>
         <h2 className="type-h2 text-ink mb-4">Crafted With Care & Precision</h2>
         <p className="type-body text-ink-soft max-w-xl mx-auto mb-10">
-          Every tool in our Indiranagar salon is medical-grade UV-sterilised before every grooming session.
+          Every tool and clinical station in our Rewari parlour is medical-grade sanitised before every session.
         </p>
 
         {/* ICONS GRID */}

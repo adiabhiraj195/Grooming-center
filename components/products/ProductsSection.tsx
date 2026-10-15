@@ -121,7 +121,7 @@ export const ProductsSection: React.FC = () => {
                 <span>Summer Kit</span>
               </div>
               <h4 className="font-display font-extrabold text-base text-ink">
-                Bangalore Heat Relief
+                Summer Heat Relief
               </h4>
               <p className="text-xs text-ink-soft mt-1">
                 Cooling aloe wash, paw wax & hydrate spritz.
@@ -273,7 +273,7 @@ export const ProductsSection: React.FC = () => {
         <div className="text-center text-xs text-ink-soft flex items-center justify-center gap-1.5 pt-6 border-t border-ink/10">
           <Info className="w-3.5 h-3.5 text-peacock shrink-0" />
           <span>
-            Some links are partner links. Your price stays the same and helps support our cage-free Bengaluru pet studio.
+            Some links are partner links. Your price stays the same and helps support our pet parlour and animal clinic in Rewari.
           </span>
         </div>
       </div>

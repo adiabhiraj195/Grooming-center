@@ -17,16 +17,16 @@ export const SEASONAL_DATA: SeasonalOffer[] = [
   {
     id: "summer",
     season: "summer",
-    title: "Bengaluru Summer Heat Cooling Spa",
-    titleHi: "बेंगलुरु समर कूलिंग स्पा",
+    title: "Rewari Summer Heat Cooling Spa",
+    titleHi: "रेवाड़ी समर कूलिंग स्पा",
     badge: "Active Care (March – June)",
     badgeHi: "गर्मियों की विशेष सुरक्षा",
-    description: "Beat the humid plateau heat with soothing aloe vera baths, cooling mint foot soaks, and hygiene belly trims to prevent heat rashes.",
+    description: "Beat the North Indian summer heat with soothing aloe vera baths, cooling mint foot soaks, and hygiene belly trims to prevent heat rashes.",
     descriptionHi: "एलोवेरा बाथ, मिंट फुट सोक और बेली ट्रिम से गर्मियों के घमौरियों और रैश से तुरंत राहत।",
     benefits: [
       "Iced herbal tea towel wipe down",
       "Organic aloe vera & cucumber deep hydrating bath",
-      "Pad moisturizer against burning Bangalore sidewalks",
+      "Pad moisturizer against burning sidewalks",
       "Sanitary & under-belly summer trim",
     ],
     benefitsHi: [
@@ -45,7 +45,7 @@ export const SEASONAL_DATA: SeasonalOffer[] = [
     titleHi: "मानसून एंटी-फंगल व टिक शील्ड",
     badge: "Rainy Season Shield (July – October)",
     badgeHi: "बरसाती मौसम सुरक्षा",
-    description: "Bangalore monsoons bring damp paws, interdigital cysts, and rampant ticks. Protect your pet with our high-potency Ayurvedic neem and tea tree bath.",
+    description: "Monsoons bring damp paws, interdigital fungal issues, and rampant ticks. Protect your pet with our high-potency Ayurvedic neem and tea tree wash.",
     descriptionHi: "बरसात में गीले पंजों की फंगल इन्फेक्शन और टिक से 100% सुरक्षा।",
     benefits: [
       "Neem leaf & tea tree anti-microbial deep rinse",
@@ -69,7 +69,7 @@ export const SEASONAL_DATA: SeasonalOffer[] = [
     titleHi: "विंटर कोट कंडीशनिंग व कोकोनट बाथ",
     badge: "Winter Comfort (Nov – Feb)",
     badgeHi: "सर्दियों का आराम",
-    description: "Dry Bangalore winter air leads to flaky dandruff and static fur. Our warm virgin coconut oil therapy locks in coat hydration.",
+    description: "Dry Haryana winter air leads to flaky dandruff and static fur. Our warm virgin coconut oil therapy locks in coat hydration.",
     descriptionHi: "सर्दियों की शुष्क हवा से होने वाली डैंड्रफ और रूखेपन से छुटकारा।",
     benefits: [
       "Warm cold-pressed coconut oil body massage",
@@ -115,7 +115,7 @@ export const SEASONAL_DATA: SeasonalOffer[] = [
 export const PACKAGES_DATA = [
   {
     id: "membership",
-    title: "Pawfect Paws Club (Monthly Membership)",
+    title: "Animalia Care Club (Monthly Membership)",
     titleHi: "मासिक स्पा क्लब",
     tagline: "4 Baths + 2 Hygiene Trims / Month",
     taglineHi: "4 बाथ + 2 हाइजीन ट्रिम प्रति माह",
@@ -143,7 +143,7 @@ export const PACKAGES_DATA = [
     features: [
       "Complimentary temperament assessment",
       "Gentle introduction session with treats",
-      "Free Pawfect Tails welcome bandana",
+      "Free Animalia welcome bandana",
       "Digital grooming card with skin/coat notes",
     ],
     popular: false,
@@ -165,4 +165,3 @@ export const PACKAGES_DATA = [
     popular: false,
   },
 ];
-

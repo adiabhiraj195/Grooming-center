@@ -20,7 +20,7 @@ export const REVIEW_TEMPLATES: ReviewTemplate[] = [
     language: "en",
     length: "short",
     template:
-      "Had an amazing experience bringing {petName} for {service}! The team was gentle, friendly, and {liked}. Highly recommend Pawfect Tails!",
+      "Had an amazing experience bringing {petName} for {service}! The team was gentle, friendly, and {liked}. Highly recommend Animalia Pet Care!",
   },
   {
     id: "en-5-s-2",
@@ -28,7 +28,7 @@ export const REVIEW_TEMPLATES: ReviewTemplate[] = [
     language: "en",
     length: "short",
     template:
-      "Best pet spa in Indiranagar! {petName} looks fresh, smells delightful, and was treated with so much love. {liked}. 🐾",
+      "Best pet parlour in Rewari! {petName} looks fresh, smells delightful, and was treated with so much love. {liked}. 🐾",
   },
   {
     id: "en-5-s-3",
@@ -45,7 +45,7 @@ export const REVIEW_TEMPLATES: ReviewTemplate[] = [
     language: "en",
     length: "detailed",
     template:
-      "I was nervous about {service} because {petName} usually gets anxious during grooming. But Pawfect Tails completely blew me away! {groomer} was so gentle and patient. What stood out most was {liked}. {petName} came out glowing and happy without any stress. 10/10 service!",
+      "I was nervous about {service} because {petName} usually gets anxious during grooming. But Animalia Pet Care completely blew me away! {groomer} was so gentle and patient. What stood out most was {liked}. {petName} came out glowing and happy without any stress. 10/10 service!",
   },
   {
     id: "en-5-d-2",
@@ -53,7 +53,7 @@ export const REVIEW_TEMPLATES: ReviewTemplate[] = [
     language: "en",
     length: "detailed",
     template:
-      "Such a premium yet compassionate pet salon in Bengaluru! Took {petName} for {service}. The facility is spotless, medical-grade clean, and {liked}. You can clearly see how passionate {groomer} is about animals. Will definitely be our regular grooming spot!",
+      "Such a premium yet compassionate pet parlour in Rewari! Took {petName} for {service}. The facility is spotless, medical-grade clean, and {liked}. You can clearly see how passionate {groomer} is about animals. Will definitely be our regular grooming spot!",
   },
   {
     id: "en-5-d-3",
@@ -61,7 +61,7 @@ export const REVIEW_TEMPLATES: ReviewTemplate[] = [
     language: "en",
     length: "detailed",
     template:
-      "Outstanding pet care! From the warm welcome to the final blow-dry, everything was handled professionally. {petName} received {service} and the results are stunning. Really appreciated that they are {liked}. Thank you Pawfect Tails team!",
+      "Outstanding pet care! From the warm welcome to the final blow-dry, everything was handled professionally. {petName} received {service} and the results are stunning. Really appreciated that they are {liked}. Thank you Animalia Pet Care team!",
   },
 
   // 4 Stars - Short & Detailed
@@ -79,7 +79,7 @@ export const REVIEW_TEMPLATES: ReviewTemplate[] = [
     language: "en",
     length: "short",
     template:
-      "Nice experience at Pawfect Tails. {petName} was handled with care during {service}. Loved that they were {liked}.",
+      "Nice experience at Animalia Pet Care. {petName} was handled with care during {service}. Loved that they were {liked}.",
   },
   {
     id: "en-4-d-1",
@@ -95,7 +95,7 @@ export const REVIEW_TEMPLATES: ReviewTemplate[] = [
     language: "en",
     length: "detailed",
     template:
-      "Good quality grooming in Indiranagar. {petName} looked great after {service}. The salon is hygienic, and {liked}. Would recommend booking appointments well in advance.",
+      "Good quality grooming in Rewari. {petName} looked great after {service}. The clinic is hygienic, and {liked}. Would recommend booking appointments well in advance.",
   },
 
   // 3 or Below - Constructive
@@ -126,7 +126,7 @@ export const REVIEW_TEMPLATES: ReviewTemplate[] = [
     language: "hinglish",
     length: "short",
     template:
-      "Bahut hi pyaara salon hai! {petName} ka {service} karwaya aur result ekdum first class tha. {liked}. Best pet spa in Indiranagar!",
+      "Bahut hi pyaara salon hai! {petName} ka {service} karwaya aur result ekdum first class tha. {liked}. Best pet parlour in Rewari!",
   },
   {
     id: "hi-en-5-s-2",
@@ -142,7 +142,7 @@ export const REVIEW_TEMPLATES: ReviewTemplate[] = [
     language: "hinglish",
     length: "detailed",
     template:
-      "Pawfect Tails ka experience bahut zabardast tha! {petName} ko {service} ke liye le gaye the. Staff bahut polite hai aur salon bilkul clean aur hygienic hai. Sabse acchi baat lagi ki {liked}. {groomer} did an exceptional job. Highly recommended to all pet parents in Bangalore!",
+      "Animalia Pet Care ka experience bahut zabardast tha! {petName} ko {service} ke liye le gaye the. Staff bahut polite hai aur salon bilkul clean aur hygienic hai. Sabse acchi baat lagi ki {liked}. {groomer} did an exceptional job. Highly recommended to all pet parents in Rewari!",
   },
   {
     id: "hi-en-5-d-2",
@@ -150,7 +150,7 @@ export const REVIEW_TEMPLATES: ReviewTemplate[] = [
     language: "hinglish",
     length: "detailed",
     template:
-      "Indiranagar mein aisa pet salon milna blessing hai. No cages, only gentle care! {petName} ka coat ekdum soft aur shiny ho gaya after {service}. Plus {liked}. Thank you {groomer} and team!",
+      "Rewari mein aisa pet salon milna blessing hai. No cages, only gentle care! {petName} ka coat ekdum soft aur shiny ho gaya after {service}. Plus {liked}. Thank you {groomer} and team!",
   },
   // 4 Stars
   {

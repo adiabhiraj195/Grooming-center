@@ -55,13 +55,13 @@ export const Footer: React.FC = () => {
                 <SinglePawPrint size={22} color="#1F2A44" />
               </div>
               <span className="font-display font-extrabold text-2xl text-white tracking-tight">
-                {SHOP_DATA.name.split(" ")[0]}
-                <span className="text-marigold"> {SHOP_DATA.name.split(" ")[1]}</span>
+                Animalia Pet Care
+                <span className="text-marigold"> Parlour</span>
               </span>
             </div>
 
             <p className="text-sm text-gray-300 leading-relaxed">
-              Bengaluru&apos;s luxury pet wellness & styling centre. Cage-free drying, natural herbal shampoos, and fearless, gentle care for every dog and cat.
+              Rewari&apos;s trusted all-in-one pet destination. Dedicated grooming clinic, medical treatments, animal hospital, and authorized pet supplies dealer near Pilot Chowk.
             </p>
 
             {/* SOCIAL ICONS */}
@@ -189,7 +189,12 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="#services" className="hover:text-marigold transition-colors">
-                  AC Cab Pet Pickup & Drop
+                  Medical Clinic & Health Check
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="hover:text-marigold transition-colors">
+                  Animal Hospital Treatments
                 </a>
               </li>
             </ul>
@@ -210,9 +215,14 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-marigold shrink-0" />
-                <a href={`tel:${SHOP_DATA.phoneRaw}`} className="hover:text-marigold font-bold text-white">
-                  {SHOP_DATA.phone}
-                </a>
+                <div className="flex flex-col">
+                  <a href={`tel:${SHOP_DATA.phoneRaw}`} className="hover:text-marigold font-bold text-white">
+                    {SHOP_DATA.phone}
+                  </a>
+                  <a href={`tel:${SHOP_DATA.alternatePhoneRaw}`} className="hover:text-marigold font-bold text-white">
+                    {SHOP_DATA.alternatePhone}
+                  </a>
+                </div>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-marigold shrink-0" />
@@ -228,40 +238,37 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* 24x7 PET HEALTH EMERGENCY IN BENGALURU */}
+        {/* 24x7 PET HEALTH & EMERGENCY DIRECTORY IN REWARI */}
         <div className="py-6 border-b border-white/10 text-xs">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 bg-white/5 rounded-2xl p-4 border border-white/10">
             <div className="flex items-center gap-2.5">
               <span className="w-2.5 h-2.5 rounded-full bg-chilli animate-ping" />
               <span className="font-display font-extrabold text-sm text-white">
-                24x7 Bengaluru Pet Health Emergency Directory:
+                Animalia Hospital & Medical Emergency Helplines (Rewari):
               </span>
             </div>
 
             <div className="flex flex-wrap items-center gap-4 text-xs text-gray-300">
               <a
-                href="tel:+918041155555"
+                href={`tel:${SHOP_DATA.phoneRaw}`}
                 className="hover:text-marigold transition-colors flex items-center gap-1.5 font-bold"
               >
-                <span>🚑 Cessna 24x7 (Domlur):</span>
-                <span className="text-white underline">+91 80 4115 5555</span>
+                <span>🚑 Primary Clinic Line:</span>
+                <span className="text-white underline">{SHOP_DATA.phone}</span>
               </a>
               <span className="text-white/20 hidden sm:inline">•</span>
               <a
-                href="tel:+918022947307"
+                href={`tel:${SHOP_DATA.alternatePhoneRaw}`}
                 className="hover:text-marigold transition-colors flex items-center gap-1.5 font-bold"
               >
-                <span>🏥 CUPA 24/7 Trauma (Hebbal):</span>
-                <span className="text-white underline">+91 80 2294 7307</span>
+                <span>🏥 Alternate Care Line:</span>
+                <span className="text-white underline">{SHOP_DATA.alternatePhone}</span>
               </a>
               <span className="text-white/20 hidden sm:inline">•</span>
-              <a
-                href="tel:+919845012345"
-                className="hover:text-marigold transition-colors flex items-center gap-1.5 font-bold"
-              >
-                <span>🩺 CARE Animal Hospital:</span>
-                <span className="text-white underline">+91 98450 12345</span>
-              </a>
+              <span className="flex items-center gap-1.5 text-gray-300">
+                <span>🩺 Walk-Ins & Urgent Care:</span>
+                <span className="text-marigold font-bold">Pilot Chowk, Rewari</span>
+              </span>
             </div>
           </div>
         </div>
@@ -271,13 +278,16 @@ export const Footer: React.FC = () => {
           <div className="flex flex-wrap items-center gap-2">
             <span className="font-semibold text-gray-300 mr-1">{t.footer.paymentsAccepted}:</span>
             <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-white/10 text-white font-medium">
+              <Smartphone className="w-3.5 h-3.5 text-emerald-400" /> NFC Tap & Pay (Apple / Google Pay)
+            </span>
+            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-white/10 text-white font-medium">
               <Smartphone className="w-3.5 h-3.5 text-marigold" /> UPI (GPay / PhonePe / Paytm)
             </span>
             <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-white/10 text-white font-medium">
               <CreditCard className="w-3.5 h-3.5 text-peacock-soft" /> Visa / Mastercard / RuPay
             </span>
             <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-white/10 text-white font-medium">
-              <Banknote className="w-3.5 h-3.5 text-emerald-400" /> Cash
+              <Banknote className="w-3.5 h-3.5 text-marigold" /> Cash
             </span>
           </div>
 

@@ -23,7 +23,7 @@ export const WallOfLoveMarquee: React.FC = () => {
         </div>
         <h3 className="type-h3 text-ink">More Love From Our Pet Parents</h3>
         <p className="type-small text-ink-soft max-w-lg mx-auto mt-1">
-          Real stories from dogs and cats pampered at our 100% cage-free Indiranagar salon.
+          Real stories from dogs and cats cared for at our Rewari parlour and clinic.
         </p>
       </div>
 

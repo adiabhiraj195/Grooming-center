@@ -5,6 +5,7 @@ import { useI18n } from "@/lib/i18n";
 import { MessageCircle, Heart, Sparkles, Home, ArrowRight } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { BrunoMascot } from "@/components/illustrations/BrunoMascot";
+import { SHOP_DATA } from "@/data/shop";
 
 export const HowItWorksSection: React.FC = () => {
   const { lang } = useI18n();
@@ -44,10 +45,10 @@ export const HowItWorksSection: React.FC = () => {
       number: "04",
       titleEn: "Prance Home Fresh!",
       titleHi: "खुशबूदार व खुशहाल घर वापसी",
-      descEn: "Complimentary festive bow-tie, a grooming report card on their coat and skin health, and safe AC pet-cab drop back home.",
-      descHi: "गले में प्यारा बो-टाई, कोट-हेल्थ रिपोर्ट कार्ड और यदि चाहें तो सुरक्षित एसी कैब से घर वापसी।",
+      descEn: "Complimentary festive bow-tie, a grooming report card on their coat and skin health, or quick consultation for any medical needs.",
+      descHi: "गले में प्यारा बो-टाई, कोट-हेल्थ रिपोर्ट कार्ड और जरूरत पड़ने पर क्लिनिकल परामर्श के साथ विदा।",
       icon: Home,
-      badge: "Free 3km Drop",
+      badge: "Quick Walk-ins Welcome",
       color: "bg-emerald-100 text-emerald-800",
     },
   ];
@@ -56,7 +57,7 @@ export const HowItWorksSection: React.FC = () => {
     <section
       id="how-it-works"
       className="py-16 md:py-24 bg-cream relative overflow-hidden"
-      aria-label="How Grooming Works at Pawfect Tails"
+      aria-label={`How Grooming Works at ${SHOP_DATA.name}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* HEADER */}

@@ -9,7 +9,7 @@ import { SHOP_DATA } from "@/data/shop";
 import { Star, Printer, ArrowLeft, Sparkles, Heart } from "lucide-react";
 
 export default function ReviewQrPage() {
-  const placeId = process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID || "ChIJPawfectTailsBengaluru";
+  const placeId = process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID || "ChIJAnimaliaPetCareRewari";
   const reviewUrl = `https://search.google.com/local/writereview?placeid=${placeId}`;
 
   const handlePrint = () => {
@@ -49,11 +49,11 @@ export default function ReviewQrPage() {
           </div>
           <div className="text-left">
             <h1 className="font-display font-extrabold text-2xl text-ink leading-none">
-              {SHOP_DATA.name.split(" ")[0]}
-              <span className="text-peacock"> {SHOP_DATA.name.split(" ")[1]}</span>
+              Animalia Pet Care
+              <span className="text-peacock"> Parlour</span>
             </h1>
             <p className="text-xs font-bold text-ink-soft uppercase tracking-wider">
-              {SHOP_DATA.city}&apos;s Happiest Pet Spa
+              {SHOP_DATA.city}&apos;s Rated #1 Pet Grooming & Hospital
             </p>
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function ReviewQrPage() {
           Tell Google in 30 Seconds! 🐾
         </h2>
         <p className="text-sm text-ink-soft max-w-sm mx-auto mb-6">
-          Your honest review helps other Bangalore pet parents find fear-free, cage-free styling for their fur babies.
+          Your honest review helps other Rewari pet parents find dependable, affordable grooming and medical care for their fur babies.
         </p>
 
         {/* BRUNO HOLDING PAW STAR MASCOT */}
@@ -125,7 +125,7 @@ export default function ReviewQrPage() {
           <p className="text-[11px] text-ink-soft flex items-center gap-1">
             <span>Made with</span>
             <Heart className="w-3 h-3 fill-chilli text-chilli inline" />
-            <span>for Bangalore&apos;s Furry Tails</span>
+            <span>for Rewari&apos;s Furry Tails</span>
           </p>
         </div>
       </main>

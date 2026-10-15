@@ -196,12 +196,12 @@ export const PRICING_DATA: PricingConfig = {
       description: "Chlorhexidine & Ketoconazole wash for itchy skin relief",
     },
     {
-      id: "addon-pickup",
-      name: "AC Pick-up & drop cab",
-      nameHi: "एसी कैब पिकअप व ड्रॉप",
-      price: 150,
-      priceDisplay: "From ₹150",
-      description: "Sanitised pet cab across Indiranagar, Domlur & HAL",
+      id: "addon-vetcheck",
+      name: "Veterinary Wellness & Health Check",
+      nameHi: "पशु चिकित्सक परामर्श व स्वास्थ्य जांच",
+      price: 199,
+      priceDisplay: "₹199",
+      description: "Comprehensive vitals checkup & healthcare assessment at our clinic",
     },
     {
       id: "addon-nailgrind",
@@ -216,8 +216,8 @@ export const PRICING_DATA: PricingConfig = {
   membershipPacks: [
     {
       id: "pass-baths",
-      name: "Pawfect Pass",
-      nameHi: "पॉफैक्ट पास (4 बाथ)",
+      name: "Animalia Care Pass",
+      nameHi: "एनीमेलिया केयर पास (4 बाथ)",
       subtitle: "4 Hydro-Baths + Blow-dry package",
       tag: "4-Visit Pack",
       badge: "Save 25%",
@@ -234,7 +234,7 @@ export const PRICING_DATA: PricingConfig = {
     },
     {
       id: "glow-club",
-      name: "Glow Club",
+      name: "Animalia Glow Club",
       nameHi: "ग्लो क्लब (मंथली फुल ग्रूम)",
       subtitle: "Monthly Full Royal Grooming + Styling",
       tag: "Quarterly",
@@ -264,7 +264,7 @@ export const PRICING_DATA: PricingConfig = {
       perks: [
         "15% off on the second pet's service",
         "Side-by-side grooming stations",
-        "Joint AC cab transit pickup",
+        "Routine health vitals check for both",
         "Free gourmet treat pack for both",
       ],
     },
@@ -295,10 +295,10 @@ export const PRICING_DATA: PricingConfig = {
     },
     {
       id: "refer-parent",
-      title: "Refer a Bangalore Pet Parent: ₹200 Each",
+      title: "Refer a Rewari Pet Parent: ₹200 Each",
       badge: "Community Love",
       description: "When your friend books their first session, both of you get ₹200 grooming spa credit.",
-      terms: "Valid for all verified clients across Indiranagar, Domlur & Koramangala.",
+      terms: "Valid for all verified clients across Rewari and surrounding areas.",
     },
   ],
 };

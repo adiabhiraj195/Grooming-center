@@ -59,7 +59,7 @@ export const BREEDS_DATA: BreedInfo[] = [
     defaultSize: "small",
     coatType: "double",
     desheddingRecommended: true,
-    notes: "Loves a fluffy de-shedding blow-out and cooling bath in Bengaluru heat.",
+    notes: "Loves a fluffy de-shedding blow-out and cooling bath in summer heat.",
   },
   {
     id: "pomeranian",

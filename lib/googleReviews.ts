@@ -55,8 +55,8 @@ interface PlacesNewResponse {
 export function getFallbackReviews(): GoogleReviewsData {
   return {
     isGoogle: false,
-    rating: SHOP_DATA.stats.rating || 4.9,
-    totalCount: SHOP_DATA.stats.reviewsCount || 512,
+    rating: SHOP_DATA.stats.rating || 5.0,
+    totalCount: SHOP_DATA.stats.reviewsCount || 42,
     mapsUri: SHOP_DATA.directionsUrl || "https://maps.google.com",
     reviews: REVIEWS_DATA.slice(0, 5).map((item) => ({
       authorName: item.authorName,

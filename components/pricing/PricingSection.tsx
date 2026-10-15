@@ -577,7 +577,7 @@ export const PricingSection: React.FC = () => {
 
                   <a
                     href={getWhatsAppLink(
-                      `Hi Pawfect Tails, I would like to enquire about the ${plan.name} (${plan.tag}) membership pack!`
+                      `Hi ${SHOP_DATA.name}, I would like to enquire about the ${plan.name} (${plan.tag}) membership pack!`
                     )}
                     target="_blank"
                     rel="noopener noreferrer"

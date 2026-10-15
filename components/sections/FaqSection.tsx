@@ -5,6 +5,7 @@ import { useI18n } from "@/lib/i18n";
 import { FAQS_DATA, FAQItem } from "@/data/faqs";
 import { ChevronDown, HelpCircle, MessageCircle } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { SHOP_DATA } from "@/data/shop";
 
 export const FaqSection: React.FC = () => {
   const { lang } = useI18n();
@@ -13,9 +14,10 @@ export const FaqSection: React.FC = () => {
 
   const categories = [
     { id: "all", labelEn: "All Questions", labelHi: "सभी प्रश्न" },
+    { id: "services", labelEn: "Services & Medical", labelHi: "सेवाएं व मेडिकल" },
+    { id: "pricing", labelEn: "Affordable Pricing", labelHi: "किफायती दरें" },
+    { id: "logistics", labelEn: "Walk-ins & Timings", labelHi: "वॉक-इन व समय" },
     { id: "safety", labelEn: "Safety & Hygiene", labelHi: "सुरक्षा व स्वच्छता" },
-    { id: "services", labelEn: "Services & Cats", labelHi: "सेवाएं व बिल्लियां" },
-    { id: "logistics", labelEn: "Cab & Bookings", labelHi: "पिकअप व बुकिंग" },
   ];
 
   const filteredFaqs =
@@ -59,8 +61,8 @@ export const FaqSection: React.FC = () => {
 
           <p className="type-body text-ink-soft">
             {lang === "hi"
-              ? "टीकाकरण, ग्रूमिंग का समय, आक्रामक पेट्स की देखभाल और पिकअप ड्रॉप के सभी जवाब यहां हैं।"
-              : "Clear answers on vaccinations, nervous pet handling, feline suites, and our Bengaluru cab pickups."}
+              ? "ग्रूमिंग क्लिनिक, मेडिकल ट्रीटमेंट, वॉक-इन और फ्री पार्किंग से जुड़े आपके सभी सवालों के जवाब।"
+              : "Clear answers on grooming clinic procedures, medical treatments, pet supplies, walk-ins, and free parking in Rewari."}
           </p>
         </div>
 
@@ -130,13 +132,13 @@ export const FaqSection: React.FC = () => {
           </div>
 
           <a
-            href={getWhatsAppLink("Hi! I have a question about grooming my pet at Pawfect Tails.")}
+            href={getWhatsAppLink(`Hi! I have a question about pet grooming and clinic treatments at ${SHOP_DATA.name}.`)}
             target="_blank"
             rel="noopener noreferrer"
             className="sticker-btn bg-[#25D366] text-white px-5 py-2.5 text-xs md:text-sm font-extrabold shadow-sticker-sm flex items-center gap-2 shrink-0"
           >
             <MessageCircle className="w-4 h-4 fill-white" />
-            <span>Chat with Groomer</span>
+            <span>Chat with Care Team</span>
           </a>
         </div>
       </div>

@@ -10,6 +10,7 @@ import {
   ReviewLength,
 } from "@/data/reviewTemplates";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { SHOP_DATA } from "@/data/shop";
 import {
   Star,
   Copy,
@@ -50,7 +51,7 @@ export const WriteReviewStepper: React.FC = () => {
   const hasClickedPostRef = useRef(false);
 
   const placeId =
-    process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID || "ChIJPawfectTailsBengaluru";
+    process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID || "ChIJAnimaliaPetCareRewari";
   const googleWriteReviewUrl = `https://search.google.com/local/writereview?placeid=${placeId}`;
 
   // Chip options
@@ -210,7 +211,7 @@ export const WriteReviewStepper: React.FC = () => {
                 Thank You for Supporting Local Pet Care!
               </h3>
               <p className="text-sm text-ink-soft max-w-md">
-                Bruno and our grooming family in Indiranagar are doing joyful zoomies right now! Your review helps other pet parents find fear-free love for their babies.
+                Our team at Animalia Pet Care in Rewari is doing joyful zoomies right now! Your review helps other pet parents find dependable, loving care for their babies.
               </p>
               <button
                 onClick={() => setCelebratingReturn(false)}
@@ -731,7 +732,7 @@ export const WriteReviewStepper: React.FC = () => {
               <div className="pt-4 border-t border-ink/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-ink-soft">
                 <span>Want to share private feedback directly with our owner?</span>
                 <a
-                  href={getWhatsAppLink("Hi Pawfect Tails, I want to share private feedback about my recent visit.")}
+                  href={getWhatsAppLink(`Hi ${SHOP_DATA.name}, I want to share private feedback about my recent visit.`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-bold text-emerald-700 hover:text-emerald-800 flex items-center gap-1.5"
@@ -752,7 +753,7 @@ export const WriteReviewStepper: React.FC = () => {
               <span>In-Salon Quick Review</span>
             </div>
             <h3 className="font-display font-bold text-xl text-ink mb-1">
-              Visiting our Indiranagar salon right now?
+              Visiting our Rewari parlour right now?
             </h3>
             <p className="text-xs md:text-sm text-ink-soft max-w-md">
               Point your phone camera at the QR code to review us directly on Google Maps in seconds.

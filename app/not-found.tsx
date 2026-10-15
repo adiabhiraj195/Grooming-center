@@ -13,7 +13,7 @@ export default function NotFound() {
 
   return (
     <div className="min-h-screen flex flex-col bg-cream text-ink">
-      <Navbar />
+      <Navbar hasTopBar={false} />
 
       <main className="flex-1 flex flex-col items-center justify-center px-4 py-32 text-center max-w-lg mx-auto">
         {/* Bruno tilted head mascot */}
@@ -31,7 +31,7 @@ export default function NotFound() {
         <p className="text-ink-soft text-base mb-8 max-w-sm">
           {lang === "hi"
             ? "लगता है जिस पेज को आप ढूंढ रहे हैं, उसे कोई शरारती पपी छुपा कर ले गया है।"
-            : "The page you're searching for seems to have been chased away like a tennis ball in Cubbon Park."}
+            : "The page you're searching for seems to have been chased away like a tennis ball across the playground."}
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-3">

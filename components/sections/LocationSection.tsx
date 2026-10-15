@@ -9,7 +9,10 @@ import {
   Clock,
   Navigation,
   Phone,
+  CheckCircle2,
   Car,
+  Smartphone,
+  Info,
 } from "lucide-react";
 
 export const LocationSection: React.FC = () => {
@@ -33,46 +36,46 @@ export const LocationSection: React.FC = () => {
   }, []);
 
   const scheduleDays = [
-    { dayEn: "Monday", dayHi: "सोमवार", hours: "9:30 AM – 8:30 PM", status: "Open" },
-    { dayEn: "Tuesday", dayHi: "मंगलवार", hours: "9:30 AM – 8:30 PM", status: "Open" },
-    { dayEn: "Wednesday", dayHi: "बुधवार", hours: "9:30 AM – 8:30 PM", status: "Open" },
-    { dayEn: "Thursday", dayHi: "गुरुवार", hours: "9:30 AM – 8:30 PM", status: "Open" },
-    { dayEn: "Friday", dayHi: "शुक्रवार", hours: "9:30 AM – 8:30 PM", status: "Open" },
-    { dayEn: "Saturday", dayHi: "शनिवार", hours: "9:30 AM – 9:00 PM", status: "Busy" },
-    { dayEn: "Sunday", dayHi: "रविवार", hours: "9:30 AM – 9:00 PM", status: "Busy" },
+    { dayEn: "Monday", dayHi: "सोमवार", hours: "8:00 AM – 8:30 PM", status: "Open" },
+    { dayEn: "Tuesday", dayHi: "मंगलवार", hours: "8:00 AM – 8:30 PM", status: "Open" },
+    { dayEn: "Wednesday", dayHi: "बुधवार", hours: "8:00 AM – 8:30 PM", status: "Open" },
+    { dayEn: "Thursday", dayHi: "गुरुवार", hours: "8:00 AM – 8:30 PM", status: "Open" },
+    { dayEn: "Friday", dayHi: "शुक्रवार", hours: "8:00 AM – 8:30 PM", status: "Open" },
+    { dayEn: "Saturday", dayHi: "शनिवार", hours: "8:00 AM – 8:30 PM", status: "Open" },
+    { dayEn: "Sunday", dayHi: "रविवार", hours: "8:00 AM – 8:30 PM", status: "Open" },
   ];
 
   return (
     <section
       id="contact"
       className="py-16 md:py-24 bg-cream relative overflow-hidden"
-      aria-label="Location, Hours & Directions"
+      aria-label="Location, Hours, Amenities & Directions"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-peacock-soft border-2 border-ink shadow-sticker-sm text-peacock font-extrabold text-xs uppercase mb-4">
             <MapPin className="w-3.5 h-3.5" />
-            <span>{lang === "hi" ? "हमारा पता व समय" : "Visit Our Indiranagar Studio"}</span>
+            <span>{lang === "hi" ? "हमारा पता व समय" : "Visit Our Rewari Parlour & Clinic"}</span>
           </div>
 
           <h2 className="type-h2 text-ink mb-4">
             {lang === "hi" ? (
               <>
-                इंदिरानगर के दिल में, <span className="text-peacock">प्यार से तैयार!</span>
+                पायलट चौक के पास, <span className="text-peacock">गेट नं-2, सेक्टर 3 रोड</span>
               </>
             ) : (
               <>
-                Conveniently Located on{" "}
-                <span className="text-peacock">12th Main, Indiranagar</span>
+                Conveniently Located Near{" "}
+                <span className="text-peacock">Pilot Chowk, Gate No-2</span>
               </>
             )}
           </h2>
 
           <p className="type-body text-ink-soft">
             {lang === "hi"
-              ? "100ft रोड और स्टारबक्स के नजदीक। समर्पित पार्किंग और वातानुकूलित लाउंज।"
-              : "Opposite Starbucks & near 100ft Road junction. Dedicated pet drop-off zone, valet parking, and cozy pet-parent lounge."}
+              ? "राधा स्वामी कॉलोनी, भक्ति नगर, रेवाड़ी। फ्री स्ट्रीट व ऑन-साइट पार्किंग, त्वरित वॉक-इन और एनएफसी पेमेंट्स।"
+              : "Sector 3 Road, Radha Swami Colony, Bhakti Nagar in Rewari. Accommodating for quick visits, walk-ins accepted, and on-site parking available."}
           </p>
         </div>
 
@@ -84,17 +87,17 @@ export const LocationSection: React.FC = () => {
             <div className="sticker-card bg-white p-6 md:p-8">
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div>
-                  <h3 className="font-display font-extrabold text-2xl text-ink">
+                  <h3 className="font-display font-extrabold text-2xl text-ink leading-tight">
                     {SHOP_DATA.name}
                   </h3>
-                  <p className="text-xs font-bold text-peacock">
-                    HAL 2nd Stage, {SHOP_DATA.area}, Bengaluru
+                  <p className="text-xs font-bold text-peacock mt-1">
+                    {SHOP_DATA.area}, {SHOP_DATA.city}
                   </p>
                 </div>
 
                 {/* REAL-TIME OPEN / CLOSED PULSE BADGE */}
                 <div
-                  className={`inline-flex items-center gap-2 px-3 py-1 rounded-full border-2 border-ink text-xs font-extrabold shadow-sticker-sm ${
+                  className={`inline-flex items-center gap-2 px-3 py-1 rounded-full border-2 border-ink text-xs font-extrabold shadow-sticker-sm shrink-0 ${
                     isOpenNow
                       ? "bg-emerald-100 text-emerald-800"
                       : "bg-amber-100 text-amber-800"
@@ -121,25 +124,37 @@ export const LocationSection: React.FC = () => {
                 </p>
               </div>
 
-              {/* ACTION BUTTONS */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-ink/10">
+              {/* ACTION BUTTONS (DIRECTION + DIRECT CALLS) */}
+              <div className="space-y-2 pt-2 border-t border-ink/10">
                 <a
                   href={SHOP_DATA.directionsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="sticker-btn bg-marigold hover:bg-marigold-deep text-ink text-xs font-extrabold py-3 shadow-sticker-sm flex items-center justify-center gap-2"
+                  className="w-full sticker-btn bg-marigold hover:bg-marigold-deep text-ink text-xs font-extrabold py-3 shadow-sticker-sm flex items-center justify-center gap-2"
                 >
                   <Navigation className="w-4 h-4 fill-ink" />
-                  <span>Get Directions</span>
+                  <span>Get Directions on Google Maps</span>
                 </a>
 
-                <a
-                  href={`tel:${SHOP_DATA.phoneRaw}`}
-                  className="sticker-btn bg-white hover:bg-cream text-ink text-xs font-extrabold py-3 shadow-sticker-sm flex items-center justify-center gap-2"
-                >
-                  <Phone className="w-4 h-4 text-peacock" />
-                  <span>Call {SHOP_DATA.phone}</span>
-                </a>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  <a
+                    href={`tel:${SHOP_DATA.phoneRaw}`}
+                    className="sticker-btn bg-white hover:bg-cream text-ink text-xs font-extrabold py-2.5 shadow-sticker-sm flex items-center justify-center gap-1.5"
+                    title="Call Primary Phone"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-peacock" />
+                    <span>085700 49726</span>
+                  </a>
+
+                  <a
+                    href={`tel:${SHOP_DATA.alternatePhoneRaw}`}
+                    className="sticker-btn bg-white hover:bg-cream text-ink text-xs font-extrabold py-2.5 shadow-sticker-sm flex items-center justify-center gap-1.5"
+                    title="Call Alternate Phone"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-peacock" />
+                    <span>095188 81824</span>
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -147,7 +162,7 @@ export const LocationSection: React.FC = () => {
             <div className="sticker-card bg-white p-6">
               <h4 className="font-display font-extrabold text-base text-ink mb-4 flex items-center gap-2">
                 <Clock className="w-4 h-4 text-peacock" />
-                <span>Operating Hours (All 7 Days)</span>
+                <span>Operating Hours (Open 7 Days a Week)</span>
               </h4>
 
               <div className="space-y-2 text-xs">
@@ -161,13 +176,7 @@ export const LocationSection: React.FC = () => {
                     </span>
                     <div className="flex items-center gap-3">
                       <span className="text-ink-soft font-semibold">{item.hours}</span>
-                      <span
-                        className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full ${
-                          item.status === "Busy"
-                            ? "bg-marigold/20 text-marigold-deep"
-                            : "bg-emerald-50 text-emerald-700"
-                        }`}
-                      >
+                      <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700">
                         {item.status}
                       </span>
                     </div>
@@ -177,13 +186,13 @@ export const LocationSection: React.FC = () => {
             </div>
           </div>
 
-          {/* RIGHT: MAP EMBED & CAB PICKUP BANNER */}
+          {/* RIGHT: MAP EMBED & AMENITIES & ACCESSIBILITY */}
           <div className="lg:col-span-7 space-y-6">
             {/* GOOGLE MAP EMBED CONTAINER */}
             <div className="sticker-card bg-white p-3 overflow-hidden">
               <div className="relative aspect-16/10 w-full rounded-2xl overflow-hidden border-2 border-ink">
                 <iframe
-                  title="Pawfect Tails Pet Spa Location on Google Maps"
+                  title="Animalia Pet Care Grooming Parlour Location on Google Maps"
                   src={SHOP_DATA.mapUrl}
                   width="100%"
                   height="100%"
@@ -199,7 +208,9 @@ export const LocationSection: React.FC = () => {
               <div className="p-3 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-ink-soft">
                 <div className="flex items-center gap-2">
                   <div className="w-2.5 h-2.5 rounded-full bg-peacock" />
-                  <span className="font-bold text-ink">Opposite Starbucks, 12th Main Indiranagar</span>
+                  <span className="font-bold text-ink">
+                    Near Pilot Chowk at Gate No-2, Sector 3 Road, Rewari
+                  </span>
                 </div>
                 <a
                   href={SHOP_DATA.directionsUrl}
@@ -213,30 +224,81 @@ export const LocationSection: React.FC = () => {
               </div>
             </div>
 
-            {/* FREE PET-CAB NOTICE CARD */}
-            <div className="sticker-card bg-peacock-soft border-2 border-peacock p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-peacock text-white border-2 border-ink shadow-sticker-sm flex items-center justify-center shrink-0">
-                  <Car className="w-6 h-6" />
+            {/* AMENITIES & ACCESSIBILITY CARD */}
+            <div className="sticker-card bg-white p-6 border-2 border-ink shadow-sticker">
+              <div className="flex items-center justify-between mb-4 pb-3 border-b border-ink/10">
+                <h4 className="font-display font-extrabold text-base text-ink flex items-center gap-2">
+                  <Car className="w-5 h-5 text-peacock" />
+                  <span>Amenities & Accessibility</span>
+                </h4>
+                <span className="text-xs font-bold text-peacock bg-peacock-soft px-3 py-1 rounded-full border border-peacock/30">
+                  Quick Visits Accommodated
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <div className="flex items-start gap-2.5 p-2.5 rounded-xl bg-cream/70 border border-ink/10">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-bold text-ink block">Walk-Ins Accepted</span>
+                    <span className="text-ink-soft text-[11px]">
+                      Accommodating for quick visits and urgent pet needs
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-display font-extrabold text-base text-ink">
-                    Can&apos;t make the drive? We&apos;ll pick your pet up!
-                  </h4>
-                  <p className="text-xs text-ink-soft">
-                    Complimentary air-conditioned pet transit within 3km of our salon. Sanitised crates & safety belts.
-                  </p>
+
+                <div className="flex items-start gap-2.5 p-2.5 rounded-xl bg-cream/70 border border-ink/10">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-bold text-ink block">Free Parking</span>
+                    <span className="text-ink-soft text-[11px]">
+                      Both free street parking and on-site parking available
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-2.5 p-2.5 rounded-xl bg-cream/70 border border-ink/10">
+                  <Smartphone className="w-4 h-4 text-peacock shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-bold text-ink block">NFC Mobile Payments</span>
+                    <span className="text-ink-soft text-[11px]">
+                      Contactless NFC, Google Pay, PhonePe, Cards & Cash
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-2.5 p-2.5 rounded-xl bg-cream/70 border border-ink/10">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-bold text-ink block">Gender-Neutral Restroom</span>
+                    <span className="text-ink-soft text-[11px]">
+                      Clean, dedicated restroom for pet parents
+                    </span>
+                  </div>
                 </div>
               </div>
 
-              <a
-                href={getWhatsAppLink("Hi! I would like to book grooming with AC pet-cab pick-up & drop.")}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="sticker-btn bg-white hover:bg-cream text-peacock text-xs font-extrabold px-5 py-2.5 shadow-sticker-sm shrink-0 whitespace-nowrap"
-              >
-                Book Cab on WhatsApp
-              </a>
+              {/* ACCESSIBILITY TRANSPARENCY NOTICE */}
+              <div className="mt-4 p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-900 flex items-start gap-2.5">
+                <Info className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
+                <p className="text-[11px] leading-relaxed">
+                  <strong>Accessibility Notice:</strong> The facility currently lacks wheelchair-accessible entrances, parking, or seating. Our supportive team is always delighted to assist pet parents and pets directly at their vehicles if needed.
+                </p>
+              </div>
+
+              {/* QUICK WHATSAPP INQUIRY STRIP */}
+              <div className="mt-4 pt-3 border-t border-ink/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+                <span className="text-ink-soft">Questions or need immediate assistance?</span>
+                <a
+                  href={getWhatsAppLink("Hi! I'm planning a visit to Animalia Pet Care in Rewari. Are you open right now?")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="sticker-btn bg-peacock-soft hover:bg-peacock text-peacock hover:text-white px-4 py-2 font-bold shadow-sticker-sm text-xs flex items-center gap-1.5 transition-colors"
+                >
+                  <span>Chat on WhatsApp</span>
+                  <span>💬</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

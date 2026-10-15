@@ -93,15 +93,15 @@ export const HeroSection: React.FC = () => {
               <Star key={i} className="w-4 h-4 fill-amber-400 stroke-ink" />
             ))}
           </div>
-          <span>{SHOP_DATA.stats.rating}★ Google Rating (500+ Reviews)</span>
+          <span>{SHOP_DATA.stats.rating.toFixed(1)}★ on Google & Justdial ({SHOP_DATA.stats.reviewsCount}+ Reviews)</span>
         </div>
         <div className="flex items-center gap-1.5 text-peacock">
           <ShieldCheck className="w-4 h-4" />
-          <span>100% Cage-Free & Vet-Approved</span>
+          <span>Grooming Clinic & Animal Hospital</span>
         </div>
         <div className="flex items-center gap-1.5 text-chilli">
           <Heart className="w-4 h-4 fill-chilli" />
-          <span>{SHOP_DATA.stats.petsGroomed} Happy Tails in Bengaluru</span>
+          <span>{SHOP_DATA.stats.petsGroomed} Happy Tails in {SHOP_DATA.city}</span>
         </div>
       </div>
     </section>

@@ -24,12 +24,12 @@ export const BookingSection: React.FC = () => {
     e.preventDefault();
 
     const bookingLines = [
-      `🐾 *New Grooming Booking Request* 🐾`,
-      `• *Shop*: ${SHOP_DATA.name} (${SHOP_DATA.area}, Bengaluru)`,
+      `🐾 *New Pet Care & Grooming Booking Request* 🐾`,
+      `• *Shop*: ${SHOP_DATA.name} (${SHOP_DATA.area}, ${SHOP_DATA.city})`,
       `• *Pet*: ${petName.trim() || "My Pet"} (${petType}${breed ? ` - ${breed.trim()}` : ""})`,
       `• *Service*: ${service}`,
       `• *Preferred Slot*: ${preferredDate || "Earliest available"} • ${preferredTime}`,
-      `• *AC Cab Transit*: ${needPickup ? "Yes, please arrange pick & drop within 3km" : "No, self-drop"}`,
+      `• *Parking / Visit*: ${needPickup ? "Need on-site parking assistance at Gate No-2" : "Direct walk-in / visit"}`,
       notes.trim() ? `• *Special Notes*: ${notes.trim()}` : "",
       `\nPlease let me know the confirmed slot! Thank you! 🐶✨`,
     ].filter(Boolean);
@@ -221,7 +221,7 @@ export const BookingSection: React.FC = () => {
                 </div>
               </div>
 
-              {/* AC CAB PICKUP CHECKBOX */}
+              {/* ON-SITE PARKING & WALK-IN ASSISTANCE CHECKBOX */}
               <label className="flex items-start gap-3 p-3.5 rounded-xl border-2 border-ink bg-peacock-soft/60 cursor-pointer select-none">
                 <input
                   type="checkbox"
@@ -232,10 +232,10 @@ export const BookingSection: React.FC = () => {
                 <div className="text-xs">
                   <span className="font-extrabold text-ink flex items-center gap-1.5">
                     <Car className="w-3.5 h-3.5 text-peacock" />
-                    Request Free AC Pet-Cab Pick-up & Drop (Within 3km of Indiranagar)
+                    Request On-Site Parking Assistance at Gate No-2, Sector 3 Road
                   </span>
                   <span className="text-ink-soft text-[11px] block mt-0.5">
-                    Safety-harness secured, climate-controlled, accompanied by trained attendant.
+                    Free street & on-site parking available. Accommodating for quick visits.
                   </span>
                 </div>
               </label>

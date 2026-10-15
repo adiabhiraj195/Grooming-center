@@ -22,10 +22,10 @@ export const GoogleReviewsSection: React.FC = async () => {
           </div>
 
           <h2 className="type-h2 text-ink mb-3">
-            {data.isGoogle ? "Loved by 500+ Pet Parents on Google" : "Real Stories from Bengaluru's Furry Families"}
+            {data.isGoogle ? "Perfect 5.0★ Rating on Google & Justdial" : "Real Stories from Rewari's Pet Parents"}
           </h2>
           <p className="type-body text-ink-soft">
-            Cage-free, gentle styling, and heartfelt care. Read verified feedback from our pet parents in Indiranagar.
+            High quality services paired with very affordable pricing. Read 40+ verified 5.0-star reviews from pet parents in Rewari.
           </p>
         </div>
 

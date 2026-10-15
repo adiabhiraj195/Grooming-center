@@ -13,11 +13,11 @@ export interface BookingWhatsAppParams {
 }
 
 /**
- * Generates an encoded WhatsApp link to chat with Pawfect Tails
+ * Generates an encoded WhatsApp link to chat with Animalia Pet Care
  */
 export function getWhatsAppLink(message?: string): string {
   const number = SHOP_DATA.whatsappNumber;
-  const defaultText = `Hi ${SHOP_DATA.name}! 🐾 I'd like to book a grooming appointment for my pet in ${SHOP_DATA.area}, ${SHOP_DATA.city}. Please let me know available slots!`;
+  const defaultText = `Hi ${SHOP_DATA.name}! 🐾 I'd like to book an appointment for my pet in ${SHOP_DATA.city}. Please let me know available slots!`;
   const text = message ? encodeURIComponent(message) : encodeURIComponent(defaultText);
   return `https://wa.me/${number}?text=${text}`;
 }
@@ -27,7 +27,7 @@ export function getWhatsAppLink(message?: string): string {
  */
 export function buildBookingWhatsAppMessage(params: BookingWhatsAppParams): string {
   const lines: string[] = [
-    `🐾 *New Grooming Booking Request* 🐾`,
+    `🐾 *New Pet Care & Grooming Booking Request* 🐾`,
     `Hello ${SHOP_DATA.name}! I would like to book a session:`,
     ``,
     params.ownerName ? `👤 *Pet Parent:* ${params.ownerName}` : "",
@@ -40,7 +40,7 @@ export function buildBookingWhatsAppMessage(params: BookingWhatsAppParams): stri
     params.preferredTime ? `⏰ *Preferred Time:* ${params.preferredTime}` : "",
     params.notes ? `📝 *Special Notes:* ${params.notes}` : "",
     ``,
-    `Please confirm if this slot is available at your ${SHOP_DATA.area} spa. Thank you! 🛁`,
+    `Please confirm if this slot is available at your ${SHOP_DATA.city} parlour. Thank you! 🛁`,
   ].filter((line) => line !== "");
 
   return lines.join("\n");

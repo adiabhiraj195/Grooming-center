@@ -6,6 +6,7 @@ import { ProductItem, ProductVariant } from "@/data/products";
 import { formatINR } from "@/lib/utils";
 import { useBasket } from "@/context/BasketContext";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { SHOP_DATA } from "@/data/shop";
 import {
   ShoppingBag,
   MessageCircle,
@@ -39,7 +40,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onQuickView }
   };
 
   const whatsappInquiryUrl = getWhatsAppLink(
-    `Hi Pawfect Tails! I have an enquiry about purchasing: ${product.name} (${selectedVariant.label}) priced at ${formatINR(selectedVariant.price)}.`
+    `Hi ${SHOP_DATA.name}! I have an enquiry about purchasing: ${product.name} (${selectedVariant.label}) priced at ${formatINR(selectedVariant.price)}.`
   );
 
   return (
@@ -200,7 +201,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onQuickView }
             </span>
             <a
               href={getWhatsAppLink(
-                `Hi Pawfect Tails, please notify me when ${product.name} (${selectedVariant.label}) is back in stock!`
+                `Hi ${SHOP_DATA.name}, please notify me when ${product.name} (${selectedVariant.label}) is back in stock!`
               )}
               target="_blank"
               rel="noopener noreferrer"

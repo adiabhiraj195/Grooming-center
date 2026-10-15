@@ -13,6 +13,8 @@ export interface ShopConfig {
   };
   phone: string;
   phoneRaw: string;
+  alternatePhone: string;
+  alternatePhoneRaw: string;
   whatsappNumber: string;
   email: string;
   hours: {
@@ -29,6 +31,16 @@ export interface ShopConfig {
     rating: number;
     reviewsCount: number;
     experienceYears: number;
+    platforms: string;
+  };
+  amenities: {
+    walkIns: boolean;
+    quickVisits: boolean;
+    freeStreetParking: boolean;
+    onSiteParking: boolean;
+    nfcPayments: boolean;
+    genderNeutralRestroom: boolean;
+    wheelchairAccessible: boolean;
   };
   socials: {
     instagram: string;
@@ -46,49 +58,60 @@ export interface ShopConfig {
 }
 
 export const SHOP_DATA: ShopConfig = {
-  name: "Pawfect Tails Pet Spa",
-  tagline: "Bengaluru's Happiest Pet Grooming & Wellness Centre",
-  city: "Bengaluru",
-  area: "Indiranagar",
+  name: "Animalia Pet Care Grooming Parlour",
+  tagline: "Rewari's Premier Pet Care & Grooming Center, Medical Clinic & Animal Hospital",
+  city: "Rewari",
+  area: "Radha Swami Colony, Bhakti Nagar",
   address: {
-    line1: "No. 428, 12th Main Road, HAL 2nd Stage",
-    line2: "Opposite Starbucks & Near 100ft Road",
-    city: "Bengaluru",
-    state: "Karnataka",
-    pincode: "560038",
-    landmark: "Indiranagar 100ft Road Junction",
+    line1: "Gate No-2, Sector 3 Road",
+    line2: "Radha Swami Colony, Bhakti Nagar",
+    city: "Rewari",
+    state: "Haryana",
+    pincode: "123401",
+    landmark: "Near Pilot Chowk at Gate No-2",
   },
-  phone: "+91 98765 43210",
-  phoneRaw: "+919876543210",
-  whatsappNumber: "919876543210",
-  email: "woof@pawfecttailspa.in",
+  phone: "+91 85700 49726",
+  phoneRaw: "+918570049726",
+  alternatePhone: "+91 95188 81824",
+  alternatePhoneRaw: "+919518881824",
+  whatsappNumber: "918570049726",
+  email: "care@animaliapetcare.in",
   hours: {
-    open: "9:30 AM",
+    open: "8:00 AM",
     close: "8:30 PM",
-    display: "Mon - Sun: 9:30 AM – 8:30 PM",
+    display: "Mon - Sun: 8:00 AM – 8:30 PM",
     days: "Open all 7 days",
-    openHour24: 9.5,
+    openHour24: 8.0,
     closeHour24: 20.5,
   },
   stats: {
-    petsGroomed: "5,000+",
-    petsGroomedCount: 5240,
-    rating: 4.9,
-    reviewsCount: 512,
-    experienceYears: 8,
+    petsGroomed: "1,200+",
+    petsGroomedCount: 1250,
+    rating: 5.0,
+    reviewsCount: 42,
+    experienceYears: 6,
+    platforms: "Google & Justdial",
+  },
+  amenities: {
+    walkIns: true,
+    quickVisits: true,
+    freeStreetParking: true,
+    onSiteParking: true,
+    nfcPayments: true,
+    genderNeutralRestroom: true,
+    wheelchairAccessible: false,
   },
   socials: {
-    instagram: "https://instagram.com/pawfecttails_petspa",
-    facebook: "https://facebook.com/pawfecttailsspa",
-    youtube: "https://youtube.com/@pawfecttailspatspa",
-    whatsapp: "https://wa.me/919876543210",
+    instagram: "https://instagram.com/animaliapetcare_rewari",
+    facebook: "https://facebook.com/animaliapetcare",
+    youtube: "https://youtube.com/@animaliapetcarerewari",
+    whatsapp: "https://wa.me/918570049726",
   },
   legal: {
-    gstin: "29AABCP1234D1Z5",
-    license: "BBMP Pet Establishment Reg: KA-BLR-PET-2022-8491",
-    copyright: "© 2026 Pawfect Tails Pet Spa Pvt Ltd. All rights reserved.",
+    gstin: "06AAICA1234D1Z9",
+    license: "Pet Healthcare & Grooming Establishment Reg: HR-REW-PET-2021",
+    copyright: "© 2026 Animalia Pet Care Grooming Parlour. All rights reserved.",
   },
-  mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.973950478174!2d77.63934377598835!3d12.97355021484179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a70a8d67f7%3A0x6b19a0a0be23871!2s12th%20Main%20Rd%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka%20560038!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
-  directionsUrl: "https://maps.google.com/?q=12.97355,77.63934",
+  mapUrl: "https://maps.google.com/maps?q=Pilot+Chowk,+Sector+3+Road,+Radha+Swami+Colony,+Bhakti+Nagar,+Rewari,+Haryana+123401&t=&z=15&ie=UTF8&iwloc=&output=embed",
+  directionsUrl: "https://www.google.com/maps/search/?api=1&query=Animalia+Pet+Care+Grooming+Parlour+Pilot+Chowk+Sector+3+Road+Radha+Swami+Colony+Bhakti+Nagar+Rewari+Haryana",
 };
-

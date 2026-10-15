@@ -16,12 +16,14 @@ import {
 } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { useBasket } from "@/context/BasketContext";
+import { useScrollHeader } from "@/lib/useScrollHeader";
 
-export const Navbar: React.FC = () => {
-  const { lang, toggleLang, t } = useI18n();
+export const Navbar: React.FC<{ hasTopBar?: boolean }> = ({ hasTopBar = true }) => {
+  const { t } = useI18n();
   const { totalCount, setIsDrawerOpen } = useBasket();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const isTopBarVisible = useScrollHeader();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -56,7 +58,11 @@ export const Navbar: React.FC = () => {
   return (
     <>
       <header
-        className={`fixed top-7 sm:top-8 left-0 right-0 z-40 transition-all duration-300 ${
+        className={`fixed left-0 right-0 ${
+          mobileMenuOpen ? "z-50" : "z-40"
+        } transition-all duration-300 ${
+          hasTopBar && isTopBarVisible ? "top-7 sm:top-8" : "top-2"
+        } ${
           isScrolled ? "py-2 px-3 md:px-4" : "py-3 px-3 md:px-8"
         }`}
       >
@@ -79,10 +85,10 @@ export const Navbar: React.FC = () => {
             <div className="flex flex-col">
               <span className="font-display font-extrabold text-lg md:text-xl text-ink leading-none tracking-tight">
                 {SHOP_DATA.name.split(" ")[0]}
-                <span className="text-peacock"> {SHOP_DATA.name.split(" ")[1]}</span>
+                <span className="text-peacock"> {SHOP_DATA.name.split(" ").slice(1, 3).join(" ")}</span>
               </span>
               <span className="text-[10px] md:text-xs font-bold text-ink-soft tracking-wider uppercase">
-                Pet Spa • {SHOP_DATA.area}
+                Grooming & Clinic • {SHOP_DATA.city}
               </span>
             </div>
           </Link>
@@ -104,7 +110,7 @@ export const Navbar: React.FC = () => {
           {/* RIGHT ACTION BUTTONS */}
           <div className="flex items-center gap-2 md:gap-3">
             {/* EN / HI TOGGLE BUTTON */}
-            <button
+            {/* <button
               onClick={toggleLang}
               className="sticker-badge bg-peacock-soft text-peacock hover:bg-peacock hover:text-white transition-colors cursor-pointer text-xs md:text-sm font-extrabold px-3 py-1.5"
               aria-label={`Switch language to ${lang === "en" ? "Hindi" : "English"}`}
@@ -113,7 +119,7 @@ export const Navbar: React.FC = () => {
               <span className={lang === "en" ? "underline underline-offset-2" : "opacity-70"}>EN</span>
               <span className="opacity-40">/</span>
               <span className={lang === "hi" ? "underline underline-offset-2" : "opacity-70"}>हिन्दी</span>
-            </button>
+            </button> */}
 
             {/* FLOATING "REVIEW US" CHIP IN NAVBAR */}
             <a
@@ -126,7 +132,7 @@ export const Navbar: React.FC = () => {
             </a>
 
             {/* BASKET ICON (IF ITEMS IN BASKET) */}
-            {totalCount > 0 && (
+            {/* {totalCount > 0 && (
               <button
                 type="button"
                 onClick={() => setIsDrawerOpen(true)}
@@ -138,7 +144,7 @@ export const Navbar: React.FC = () => {
                   {totalCount}
                 </span>
               </button>
-            )}
+            )} */}
 
             {/* BOOK NOW CTA */}
             <a
@@ -171,8 +177,8 @@ export const Navbar: React.FC = () => {
         >
           <div className="flex flex-col gap-4 max-w-sm mx-auto w-full">
             <div className="text-center pb-2">
-              <span className="type-eyebrow text-peacock">{SHOP_DATA.city}&apos;s Happiest Pet Spa</span>
-              <h2 className="font-display font-extrabold text-2xl text-ink mt-1">Pawfect Tails</h2>
+              <span className="type-eyebrow text-peacock">{SHOP_DATA.city}&apos;s All-in-One Pet Destination</span>
+              <h2 className="font-display font-extrabold text-2xl text-ink mt-1">{SHOP_DATA.name}</h2>
             </div>
 
             <nav className="flex flex-col gap-2.5">
@@ -225,7 +231,7 @@ export const Navbar: React.FC = () => {
           </div>
 
           <div className="text-center text-xs text-ink-soft py-4 border-t border-ink/10">
-            Open 7 Days • 9:30 AM – 8:30 PM • 12th Main, Indiranagar
+            Open 7 Days • {SHOP_DATA.hours.display} • {SHOP_DATA.area}, {SHOP_DATA.city}
           </div>
         </div>
       )}

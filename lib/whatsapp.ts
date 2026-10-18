@@ -13,7 +13,7 @@ export interface BookingWhatsAppParams {
 }
 
 /**
- * Generates an encoded WhatsApp link to chat with Animalia Pet Care
+ * Generates an encoded WhatsApp link to chat with the pet care center
  */
 export function getWhatsAppLink(message?: string): string {
   const number = SHOP_DATA.whatsappNumber;

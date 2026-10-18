@@ -216,8 +216,8 @@ export const PRICING_DATA: PricingConfig = {
   membershipPacks: [
     {
       id: "pass-baths",
-      name: "Animalia Care Pass",
-      nameHi: "एनीमेलिया केयर पास (4 बाथ)",
+      name: "Pawfect Care Pass",
+      nameHi: "पॉफ़ेक्ट केयर पास (4 बाथ)",
       subtitle: "4 Hydro-Baths + Blow-dry package",
       tag: "4-Visit Pack",
       badge: "Save 25%",
@@ -234,8 +234,8 @@ export const PRICING_DATA: PricingConfig = {
     },
     {
       id: "glow-club",
-      name: "Animalia Glow Club",
-      nameHi: "ग्लो क्लब (मंथली फुल ग्रूम)",
+      name: "Pawfect Glow Club",
+      nameHi: "पॉफ़ेक्ट ग्लो क्लब (मंथली फुल ग्रूम)",
       subtitle: "Monthly Full Royal Grooming + Styling",
       tag: "Quarterly",
       badge: "Best Value",

@@ -20,7 +20,7 @@ export const REVIEW_TEMPLATES: ReviewTemplate[] = [
     language: "en",
     length: "short",
     template:
-      "Had an amazing experience bringing {petName} for {service}! The team was gentle, friendly, and {liked}. Highly recommend Animalia Pet Care!",
+      "Had an amazing experience bringing {petName} for {service}! The team was gentle, friendly, and {liked}. Highly recommend Pawfect Care!",
   },
   {
     id: "en-5-s-2",
@@ -45,7 +45,7 @@ export const REVIEW_TEMPLATES: ReviewTemplate[] = [
     language: "en",
     length: "detailed",
     template:
-      "I was nervous about {service} because {petName} usually gets anxious during grooming. But Animalia Pet Care completely blew me away! {groomer} was so gentle and patient. What stood out most was {liked}. {petName} came out glowing and happy without any stress. 10/10 service!",
+      "I was nervous about {service} because {petName} usually gets anxious during grooming. But Pawfect Care completely blew me away! {groomer} was so gentle and patient. What stood out most was {liked}. {petName} came out glowing and happy without any stress. 10/10 service!",
   },
   {
     id: "en-5-d-2",
@@ -61,7 +61,7 @@ export const REVIEW_TEMPLATES: ReviewTemplate[] = [
     language: "en",
     length: "detailed",
     template:
-      "Outstanding pet care! From the warm welcome to the final blow-dry, everything was handled professionally. {petName} received {service} and the results are stunning. Really appreciated that they are {liked}. Thank you Animalia Pet Care team!",
+      "Outstanding pet care! From the warm welcome to the final blow-dry, everything was handled professionally. {petName} received {service} and the results are stunning. Really appreciated that they are {liked}. Thank you Pawfect Care team!",
   },
 
   // 4 Stars - Short & Detailed
@@ -79,7 +79,7 @@ export const REVIEW_TEMPLATES: ReviewTemplate[] = [
     language: "en",
     length: "short",
     template:
-      "Nice experience at Animalia Pet Care. {petName} was handled with care during {service}. Loved that they were {liked}.",
+      "Nice experience at Pawfect Care. {petName} was handled with care during {service}. Loved that they were {liked}.",
   },
   {
     id: "en-4-d-1",
@@ -142,7 +142,7 @@ export const REVIEW_TEMPLATES: ReviewTemplate[] = [
     language: "hinglish",
     length: "detailed",
     template:
-      "Animalia Pet Care ka experience bahut zabardast tha! {petName} ko {service} ke liye le gaye the. Staff bahut polite hai aur salon bilkul clean aur hygienic hai. Sabse acchi baat lagi ki {liked}. {groomer} did an exceptional job. Highly recommended to all pet parents in Rewari!",
+      "Pawfect Care ka experience bahut zabardast tha! {petName} ko {service} ke liye le gaye the. Staff bahut polite hai aur salon bilkul clean aur hygienic hai. Sabse acchi baat lagi ki {liked}. {groomer} did an exceptional job. Highly recommended to all pet parents in Rewari!",
   },
   {
     id: "hi-en-5-d-2",

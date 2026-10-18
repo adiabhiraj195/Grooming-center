@@ -55,13 +55,13 @@ export const Footer: React.FC = () => {
                 <SinglePawPrint size={22} color="#1F2A44" />
               </div>
               <span className="font-display font-extrabold text-2xl text-white tracking-tight">
-                Animalia Pet Care
-                <span className="text-marigold"> Parlour</span>
+                {SHOP_DATA.name.split(" ").slice(0, 2).join(" ")}
+                <span className="text-marigold"> {SHOP_DATA.name.split(" ").slice(2).join(" ")}</span>
               </span>
             </div>
 
             <p className="text-sm text-gray-300 leading-relaxed">
-              Rewari&apos;s trusted all-in-one pet destination. Dedicated grooming clinic, medical treatments, animal hospital, and authorized pet supplies dealer near Pilot Chowk.
+              {SHOP_DATA.city}&apos;s trusted all-in-one pet destination. Dedicated grooming clinic, medical treatments, animal hospital, and authorized pet supplies dealer near Pilot Chowk.
             </p>
 
             {/* SOCIAL ICONS */}
@@ -244,7 +244,7 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-2.5">
               <span className="w-2.5 h-2.5 rounded-full bg-chilli animate-ping" />
               <span className="font-display font-extrabold text-sm text-white">
-                Animalia Hospital & Medical Emergency Helplines (Rewari):
+                {SHOP_DATA.name.split(" ").slice(0, 2).join(" ")} Hospital & Medical Emergency Helplines ({SHOP_DATA.city}):
               </span>
             </div>
 

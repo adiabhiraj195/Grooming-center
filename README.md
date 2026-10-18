@@ -1,4 +1,4 @@
-# Animalia Pet Care Grooming Parlour — Rewari, Haryana
+# Pawfect Care Pet Grooming Parlour — Rewari, Haryana
 
 Highly-rated all-in-one pet care and grooming center, medical clinic, animal hospital, and pet accessories dealership located near Pilot Chowk at Gate No-2, Sector 3 Road, Radha Swami Colony, Bhakti Nagar in Rewari, Haryana. Built with **Next.js 16 (App Router)**, **React 19**, **TypeScript**, **Tailwind CSS v4**, and **Framer Motion**.
 
@@ -32,7 +32,7 @@ Highly-rated all-in-one pet care and grooming center, medical clinic, animal hos
    - Interactive dog size weight selector (< 10kg, 10–25kg, 25–40kg, 40kg+) with dynamic scaling Bruno mascot silhouette.
    - Cat coat selector (Short Coat, Long/Double Coat).
    - Highly affordable, transparent pricing across 3 primary packages + Veterinary Check add-ons.
-   - Membership plans (Animalia Care Pass & Glow Club) showing exact savings.
+   - Membership plans (Pawfect Care Pass & Glow Club) showing exact savings.
 
 5. **The Groomer's Shelf — Products Section (`#products`)**:
    - Curated pet supplies across 7 categories (Shampoo, Food & Treats, Toys, Walk Gear, Health, Cat Corner, Accessories).
@@ -41,7 +41,7 @@ Highly-rated all-in-one pet care and grooming center, medical clinic, animal hos
 
 6. **Hours & Contact**:
    - Open **7 days a week from 8:00 AM to 8:30 PM**.
-   - Direct Contact Numbers: **085700 49726** and **095188 81824**.
+   - Direct Contact Numbers: **098765 43210** and **098765 43211**.
    - Bilingual support: Full English and हिन्दी localization (`lib/i18n.tsx`).
 
 ---
@@ -63,13 +63,13 @@ Create `.env.local` in the project root (see `.env.example`):
 GOOGLE_PLACES_API_KEY=your_places_api_key_here
 
 # Google Place ID for fetching reviews (Server-only)
-GOOGLE_PLACE_ID=ChIJAnimaliaPetCareRewari
+GOOGLE_PLACE_ID=ChIJMOCK_PLACE_ID_PAWCARE
 
 # Public Google Place ID for the direct "Write a Review" link
-NEXT_PUBLIC_GOOGLE_PLACE_ID=ChIJAnimaliaPetCareRewari
+NEXT_PUBLIC_GOOGLE_PLACE_ID=ChIJMOCK_PLACE_ID_PAWCARE
 
 # WhatsApp business phone number (Country code + 10 digits without '+' or spaces)
-NEXT_PUBLIC_WHATSAPP_NUMBER=918570049726
+NEXT_PUBLIC_WHATSAPP_NUMBER=919876543210
 ```
 
 > **Note**: If `GOOGLE_PLACES_API_KEY` or `GOOGLE_PLACE_ID` is left empty, the website automatically falls back to curated 5.0★ pet parent reviews from `data/reviews.ts` with zero visitor downtime.
@@ -88,7 +88,7 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### 1. How to Find Your Google Place ID
 1. Open the official [Google Maps Place ID Finder](https://developers.google.com/maps/documentation/places/web-service/place-id).
-2. Enter your shop name and address (e.g. `Animalia Pet Care Grooming Parlour, Bhakti Nagar, Rewari, Haryana`).
+2. Enter your shop name and address (e.g. `Pawfect Care Pet Grooming Parlour, Bhakti Nagar, Rewari, Haryana`).
 3. Copy the alphanumeric Place ID string (e.g. `ChIJ...`).
 4. Set both `GOOGLE_PLACE_ID` and `NEXT_PUBLIC_GOOGLE_PLACE_ID` in `.env.local`.
 

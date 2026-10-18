@@ -115,7 +115,7 @@ export const SEASONAL_DATA: SeasonalOffer[] = [
 export const PACKAGES_DATA = [
   {
     id: "membership",
-    title: "Animalia Care Club (Monthly Membership)",
+    title: "Pawfect Care Club (Monthly Membership)",
     titleHi: "मासिक स्पा क्लब",
     tagline: "4 Baths + 2 Hygiene Trims / Month",
     taglineHi: "4 बाथ + 2 हाइजीन ट्रिम प्रति माह",
@@ -143,7 +143,7 @@ export const PACKAGES_DATA = [
     features: [
       "Complimentary temperament assessment",
       "Gentle introduction session with treats",
-      "Free Animalia welcome bandana",
+      "Free Pawfect welcome bandana",
       "Digital grooming card with skin/coat notes",
     ],
     popular: false,

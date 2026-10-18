@@ -1,7 +1,7 @@
-# 🐾 Animalia Pet Care — UI/UX Guide & Visual Documentation
+# 🐾 Pawfect Care — UI/UX Guide & Visual Documentation
 
 > **Language:** Hinglish (Hindi + English)  
-> **Project:** Animalia Pet Care (Grooming Clinic, Hospital & Pet Store — Rewari)  
+> **Project:** Pawfect Care (Grooming Clinic, Hospital & Pet Store — Rewari)  
 > **Tech Stack:** Next.js 16 (App Router), React 19, Tailwind CSS v4, Framer Motion, Lucide Icons  
 > **Target Audience:** Developers, Designers, Store Owners aur End-Users jo application ke design, UX flows aur customer touchpoints ko detail me samajhna chahte hain.
 
@@ -59,7 +59,7 @@ Hamara UI design **"Warm, Playful yet Clinically Trustworthy"** vibe deliver kar
 3. **Emergency Floating WhatsApp Pill:**
    * Top right me direct WhatsApp CTA diya gaya hai emergency queries ya walk-in coordination ke liye.
 4. **Sticker Style Brand Navbar:**
-   * Logo me yellow circle paw icon aur bold typography hai: `Animalia Pet Care - Grooming & Clinic • Rewari`.
+   * Logo me yellow circle paw icon aur bold typography hai: `Pawfect Care - Grooming & Clinic • Rewari`.
    * Desktop menu items: *Services, Pricing, Reviews, Products, Transformations, Find Us*.
    * Two high-contrast Action Buttons:
      * `⭐ Review Us` (Instant Google review flow trigger)
@@ -137,7 +137,7 @@ Hamara UI design **"Warm, Playful yet Clinically Trustworthy"** vibe deliver kar
   * `See all reviews on Google ↗` (External link to verified Google Maps page).
   * `⭐ Review Us` (Seedha hamara interactive review assistant open karta hai).
 * **Testimonial Cards:** Real Rewari locals ke reviews display kiye gaye hain:
-  * **Vikas Yadav:** *"Animalia Pet Care is hands down the best pet parlour in Rewari... High quality service with very affordable pricing."*
+  * **Vikas Yadav:** *"Pawfect Care is hands down the best pet parlour in Rewari... High quality service with very affordable pricing."*
   * **Pooja Sharma:** *"What sets them apart is dependable customer service... treated a minor ear infection on the spot near Pilot Chowk."*
   * **Amit Rao:** *"Truly an all-in-one pet destination. Having an animal hospital right inside makes treating minor cuts so easy."*
 
@@ -270,7 +270,7 @@ Pet parents ko grooming session ka pura step-by-step process samjhane ke liye 4 
 * **Precise Landmark Callout:** *"Conveniently Located Near Pilot Chowk, Gate No-2"* (Sector 3 Road, Radha Swami Colony, Bhakti Nagar, Rewari, Haryana - 123401).
 * **Direct Clicks:**
   * `Get Directions on Google Maps` (Opens native navigation app with GPS coordinates).
-  * Direct Tap-to-call phone numbers: `📞 085700 49726` aur `📞 095188 81824`.
+  * Direct Tap-to-call phone numbers: `📞 098765 43210` aur `📞 098765 43211`.
 * **Interactive Map Card:** Surrounding area map show karta hai jisse local pet parents ko reach karne me koi confusion na ho.
 
 ---
@@ -317,5 +317,5 @@ Pet parents ko grooming session ka pura step-by-step process samjhane ke liye 4 
 
 ---
 
-*Doc created with ❤️ for Animalia Pet Care Rewari Team.*
+*Doc created with ❤️ for Pawfect Care Rewari Team.*
 

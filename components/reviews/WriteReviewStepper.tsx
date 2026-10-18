@@ -51,7 +51,7 @@ export const WriteReviewStepper: React.FC = () => {
   const hasClickedPostRef = useRef(false);
 
   const placeId =
-    process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID || "ChIJAnimaliaPetCareRewari";
+    process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID || "ChIJMOCK_PLACE_ID_PAWCARE";
   const googleWriteReviewUrl = `https://search.google.com/local/writereview?placeid=${placeId}`;
 
   // Chip options
@@ -211,7 +211,7 @@ export const WriteReviewStepper: React.FC = () => {
                 Thank You for Supporting Local Pet Care!
               </h3>
               <p className="text-sm text-ink-soft max-w-md">
-                Our team at Animalia Pet Care in Rewari is doing joyful zoomies right now! Your review helps other pet parents find dependable, loving care for their babies.
+                Our team at {SHOP_DATA.name} in {SHOP_DATA.city} is doing joyful zoomies right now! Your review helps other pet parents find dependable, loving care for their babies.
               </p>
               <button
                 onClick={() => setCelebratingReturn(false)}

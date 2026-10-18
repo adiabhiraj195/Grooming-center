@@ -266,7 +266,7 @@ export const translations: Record<Language, Translations> = {
     },
     howItWorks: {
       eyebrow: "The Pampering Journey",
-      title: "How Grooming & Care Works at Animalia Pet Care",
+      title: "How Grooming & Care Works at Pawfect Care",
       subtitle: "Step-by-step stress-free experience so your pet feels safe, loved and excited to visit.",
     },
     reviews: {
@@ -335,7 +335,7 @@ export const translations: Record<Language, Translations> = {
       ownerName: "Pet Parent Name *",
       ownerNamePlaceholder: "e.g. Ananya Sharma",
       phone: "Mobile Phone (+91) *",
-      phonePlaceholder: "85700 49726",
+      phonePlaceholder: "98765 43210",
       petType: "Pet Type *",
       breed: "Pet Breed *",
       breedPlaceholder: "e.g. Indie, Golden Retriever, Persian",
@@ -352,14 +352,14 @@ export const translations: Record<Language, Translations> = {
       bookAnother: "Book Another Session",
     },
     location: {
-      eyebrow: "Come Visit Animalia in Rewari",
+      eyebrow: "Come Visit Us in Rewari",
       title: "Near Pilot Chowk, Gate No-2, Sector 3 Road",
       subtitle: "Free street & on-site parking, walk-ins welcome, NFC mobile payments, and gender-neutral restroom.",
       openNow: "🟢 Open Now (Closes at 8:30 PM IST)",
       closedNow: "🔴 Closed (Opens tomorrow at 8:00 AM IST)",
       openHours: "Open Monday – Sunday: 8:00 AM to 8:30 PM",
       getDirections: "Get Directions on Google Maps",
-      callStore: "Call 085700 49726 / 095188 81824",
+      callStore: "Call 098765 43210 / 098765 43211",
       addressTitle: "Salon Address",
     },
     footer: {
@@ -449,7 +449,7 @@ export const translations: Record<Language, Translations> = {
     },
     howItWorks: {
       eyebrow: "स्पा का प्यारा सफर",
-      title: "Animalia Pet Care में ग्रूमिंग व देखभाल कैसे होती है?",
+      title: "Pawfect Care में ग्रूमिंग व देखभाल कैसे होती है?",
       subtitle: "बिना किसी तनाव के चरण-दर-चरण देखभाल ताकि आपका पेट खुशी-खुशी आए।",
     },
     reviews: {
@@ -467,7 +467,7 @@ export const translations: Record<Language, Translations> = {
       filterAnxious: "शर्मीले या पहली बार आए",
       leaveReviewBtn: "अपनी समीक्षा लिखें",
       leaveReviewTitle: "अपने अनुभव साझा करें",
-      leaveReviewDesc: "बताएं कि एनीमेलिया पेट केयर की ग्रूमिंग और मेडिकल टीम ने आपके पेट का ख्याल कैसे रखा!",
+      leaveReviewDesc: "बताएं कि पॉफ़ेक्ट पेट केयर की ग्रूमिंग और मेडिकल टीम ने आपके पेट का ख्याल कैसे रखा!",
       yourName: "आपका नाम",
       petName: "पेट का नाम",
       petBreed: "नस्ल (जैसे इंडी, शीह त्ज़ू)",
@@ -518,7 +518,7 @@ export const translations: Record<Language, Translations> = {
       ownerName: "पेट पैरेंट का नाम *",
       ownerNamePlaceholder: "उदा. अनन्य शर्मा",
       phone: "मोबाइल नंबर (+91) *",
-      phonePlaceholder: "85700 49726",
+      phonePlaceholder: "98765 43210",
       petType: "जानवर का प्रकार *",
       breed: "नस्ल *",
       breedPlaceholder: "उदा. इंडी, लैब्राडोर, पर्शियन",
@@ -535,14 +535,14 @@ export const translations: Record<Language, Translations> = {
       bookAnother: "दूसरा स्लॉट बुक करें",
     },
     location: {
-      eyebrow: "एनीमेलिया पेट केयर, रेवाड़ी पधारें",
+      eyebrow: "पॉफ़ेक्ट पेट केयर, रेवाड़ी पधारें",
       title: "पायलट चौक के पास, गेट नं-2, सेक्टर 3 रोड",
       subtitle: "फ्री स्ट्रीट व ऑन-साइट पार्किंग, त्वरित वॉक-इन और एनएफसी मोबाइल पेमेंट्स।",
       openNow: "🟢 अभी खुला है (रात 8:30 बजे तक)",
       closedNow: "🔴 अभी बंद है (कल सुबह 8:00 बजे खुलेगा)",
       openHours: "सोमवार - रविवार: सुबह 8:00 से रात 8:30 बजे तक",
       getDirections: "गूगल मैप्स पर रास्ता देखें",
-      callStore: "085700 49726 / 095188 81824 पर कॉल करें",
+      callStore: "098765 43210 / 098765 43211 पर कॉल करें",
       addressTitle: "सैलून का पता",
     },
     footer: {

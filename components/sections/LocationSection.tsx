@@ -143,7 +143,7 @@ export const LocationSection: React.FC = () => {
                     title="Call Primary Phone"
                   >
                     <Phone className="w-3.5 h-3.5 text-peacock" />
-                    <span>085700 49726</span>
+                    <span>{SHOP_DATA.phone}</span>
                   </a>
 
                   <a
@@ -152,7 +152,7 @@ export const LocationSection: React.FC = () => {
                     title="Call Alternate Phone"
                   >
                     <Phone className="w-3.5 h-3.5 text-peacock" />
-                    <span>095188 81824</span>
+                    <span>{SHOP_DATA.alternatePhone}</span>
                   </a>
                 </div>
               </div>
@@ -192,7 +192,7 @@ export const LocationSection: React.FC = () => {
             <div className="sticker-card bg-white p-3 overflow-hidden">
               <div className="relative aspect-16/10 w-full rounded-2xl overflow-hidden border-2 border-ink">
                 <iframe
-                  title="Animalia Pet Care Grooming Parlour Location on Google Maps"
+                  title={`${SHOP_DATA.name} Location on Google Maps`}
                   src={SHOP_DATA.mapUrl}
                   width="100%"
                   height="100%"
@@ -290,7 +290,7 @@ export const LocationSection: React.FC = () => {
               <div className="mt-4 pt-3 border-t border-ink/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
                 <span className="text-ink-soft">Questions or need immediate assistance?</span>
                 <a
-                  href={getWhatsAppLink("Hi! I'm planning a visit to Animalia Pet Care in Rewari. Are you open right now?")}
+                  href={getWhatsAppLink(`Hi! I'm planning a visit to ${SHOP_DATA.name} in ${SHOP_DATA.city}. Are you open right now?`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="sticker-btn bg-peacock-soft hover:bg-peacock text-peacock hover:text-white px-4 py-2 font-bold shadow-sticker-sm text-xs flex items-center gap-1.5 transition-colors"

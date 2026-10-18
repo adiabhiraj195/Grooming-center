@@ -10,18 +10,18 @@ export interface FAQItem {
 export const FAQS_DATA: FAQItem[] = [
   {
     id: "faq-services-offered",
-    question: "What services are offered at Animalia Pet Care?",
-    questionHi: "Animalia Pet Care में कौन-कौन सी सेवाएं उपलब्ध हैं?",
-    answer: "Animalia Pet Care acts as an all-in-one pet destination in Rewari. We feature a dedicated grooming clinic to keep pets clean, styled, and well-maintained; a fully functioning medical clinic and animal hospital to handle various pet treatments and healthcare needs; and a prominent local pet supply dealership offering pet foods, accessories, and daily essentials.",
-    answerHi: "Animalia Pet Care रेवाड़ी में ऑल-इन-वन पेट सेंटर है। यहां साफ-सफाई व स्टाइलिंग के लिए समर्पित ग्रूमिंग क्लिनिक, विभिन्न बीमारियों व स्वास्थ्य जरूरतों के लिए मेडिकल क्लिनिक व पशु चिकित्सालय, और पेट फूड्स व एक्सेसरीज की पूरी दुकान उपलब्ध है।",
+    question: "What services are offered at Pawfect Care?",
+    questionHi: "Pawfect Care में कौन-कौन सी सेवाएं उपलब्ध हैं?",
+    answer: "Pawfect Care acts as an all-in-one pet destination in Rewari. We feature a dedicated grooming clinic to keep pets clean, styled, and well-maintained; a fully functioning medical clinic and animal hospital to handle various pet treatments and healthcare needs; and a prominent local pet supply dealership offering pet foods, accessories, and daily essentials.",
+    answerHi: "Pawfect Care रेवाड़ी में ऑल-इन-वन पेट सेंटर है। यहां साफ-सफाई व स्टाइलिंग के लिए समर्पित ग्रूमिंग क्लिनिक, विभिन्न बीमारियों व स्वास्थ्य जरूरतों के लिए मेडिकल क्लिनिक व पशु चिकित्सालय, और पेट फूड्स व एक्सेसरीज की पूरी दुकान उपलब्ध है।",
     category: "services",
   },
   {
     id: "faq-walkins-parking",
     question: "Do you accept walk-ins and is parking available?",
     questionHi: "क्या बिना अपॉइंटमेंट (Walk-in) आ सकते हैं और क्या पार्किंग की सुविधा है?",
-    answer: "Yes! Our facility is accommodating for quick visits and warmly welcomes walk-ins. We offer both free street parking and on-site parking right outside Gate No-2 on Sector 3 Road. You can also contact us in advance at 085700 49726 or 095188 81824.",
-    answerHi: "जी हां! हमारे यहां त्वरित विजिट के लिए वॉक-इन की पूरी सुविधा है। गेट नं-2, सेक्टर 3 रोड पर ऑन-साइट पार्किंग और मुफ्त स्ट्रीट पार्किंग दोनों उपलब्ध हैं। आप हमें 085700 49726 या 095188 81824 पर कॉल भी कर सकते हैं।",
+    answer: "Yes! Our facility is accommodating for quick visits and warmly welcomes walk-ins. We offer both free street parking and on-site parking right outside Gate No-2 on Sector 3 Road. You can also contact us in advance at 098765 43210 or 098765 43211.",
+    answerHi: "जी हां! हमारे यहां त्वरित विजिट के लिए वॉक-इन की पूरी सुविधा है। गेट नं-2, सेक्टर 3 रोड पर ऑन-साइट पार्किंग और मुफ्त स्ट्रीट पार्किंग दोनों उपलब्ध हैं। आप हमें 098765 43210 या 098765 43211 पर कॉल भी कर सकते हैं।",
     category: "logistics",
   },
   {
@@ -68,7 +68,7 @@ export const FAQS_DATA: FAQItem[] = [
     id: "faq-products",
     question: "What pet supplies and accessories do you distribute?",
     questionHi: "आप कौन-कौन से पेट प्रोडक्ट्स और एक्सेसरीज उपलब्ध कराते हैं?",
-    answer: "Beyond healthcare and grooming, Animalia Pet Care is a prominent local dealer for pet accessories in Rewari. We distribute top-tier dog and cat foods, treats, leashes, harnesses, gentle tearless shampoos, grooming brushes, toys, and daily essentials at very affordable prices.",
+    answer: "Beyond healthcare and grooming, Pawfect Care is a prominent local dealer for pet accessories in Rewari. We distribute top-tier dog and cat foods, treats, leashes, harnesses, gentle tearless shampoos, grooming brushes, toys, and daily essentials at very affordable prices.",
     answerHi: "हेल्थकेयर और ग्रूमिंग के अलावा, हम रेवाड़ी में पेट एक्सेसरीज के प्रमुख स्थानीय डीलर हैं। हम प्रीमियम डॉग व कैट फूड, ट्रीट्स, लीश, हार्नेस, हर्बल शैंपू, ग्रूमिंग टूल्स और दैनिक जरूरत की सभी चीजें बहुत किफायती दरों पर उपलब्ध कराते हैं।",
     category: "services",
   },
